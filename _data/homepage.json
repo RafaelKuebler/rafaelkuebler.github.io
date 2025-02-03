@@ -1,18 +1,9 @@
 {
-    "title": "11ty-no-style-please",
-    "subtitle": "demo of a page made with 11ty-no-style-please",
+    "title": "Hi here!",
+    "subtitle": "I am Rafa and you have somehow arrived at my blog! I am happy to see you - have a look at my writing below! ↓",
     "menu": [
         {
-            "title": "read more here",
-            "entries": [
-                {
-                    "title": "github",
-                    "url": "http://github.com/stopnoanime/11ty-no-style-please"
-                }
-            ]
-        },
-        {
-            "title": "all posts with the 'post' tag",
+            "title": "Posts",
             "post_list": "post"
         }
     ]
