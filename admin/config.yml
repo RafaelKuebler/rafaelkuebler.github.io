@@ -7,7 +7,7 @@ media_folder: media
 public_folder: /media
 
 
-site_url: https://rafaelkuebler.github.io/blog/
+site_url: https://rafaelkuebler.github.io/
 
 
 collections:
