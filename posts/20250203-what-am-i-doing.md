@@ -1,6 +1,7 @@
 ---
 title: What am I doing
 date: 2025-02-03T20:14:00.000Z
+layout: post.njk
 tags:
   - post
 ---

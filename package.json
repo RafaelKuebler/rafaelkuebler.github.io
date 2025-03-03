@@ -1,6 +1,6 @@
 {
-  "name": "11ty-no-style-please",
-  "description": "A template for a minimalistic blog",
+  "name": "Rafa's Blog",
+  "description": "Rafael's reflections on life and other things",
   "scripts": {
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
