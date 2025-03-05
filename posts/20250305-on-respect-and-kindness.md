@@ -1,6 +1,6 @@
 ---
 title: On respect and kindness
-date: 2025-03-05T20:20:00.000Z
+date: 2025-03-05T20:20:00.00+01:00
 layout: post.njk
 tags:
   - post
