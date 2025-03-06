@@ -24,6 +24,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("media");
+    eleventyConfig.addPassthroughCopy("favicon*");
 
     eleventyConfig.addFilter("formatDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).toISODate();
