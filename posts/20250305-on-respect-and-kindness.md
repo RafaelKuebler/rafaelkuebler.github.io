@@ -1,5 +1,5 @@
 ---
-title: On respect and kindness
+title: On Respect and Kindness
 date: 2025-03-05
 layout: post.njk
 tags:
