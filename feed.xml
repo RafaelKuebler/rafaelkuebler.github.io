@@ -7,6 +7,26 @@
     <description>Rafael&#39;s reflections on life and other things.</description>
     <language>en</language>
     <item>
+      <title>Just Don&#39;t Build Crap</title>
+      <link>https://rafaelkuebler.github.io/posts/20250317-just-dont-build-crap/</link>
+      <description>&lt;p&gt;At my first consulting client assignment ever I was struggling with the design of a software component I had been tasked with. I remember thinking about it for at least a couple of hours, trying things out, and then wondering if this was actually the way to go forward.&lt;br&gt;
+Looking back, I am sure there was an unhealthy dose of impostor&#39;s syndrome involved, and the expectation on myself for it to be perfect.&lt;br&gt;
+And I think, most importantly: none of the options were really significantly better or worse than the other options. Looking back, it was impossible to foresee how the system would continue to evolve, and the interface was possibly way too irrelevant to have any major impact on anything directly business-critical.&lt;/p&gt;
+&lt;p&gt;I decided to ask a more experienced dev and consultant for his opinion. I presented the options I had come up with, listed the pros and cons and finally rounded it up with a: &amp;quot;So what do you think makes the most sense?&amp;quot;. My colleague just stared at the screen for a few seconds, then another few seconds at me. Finally, dryly, with a shrug and a smile, he blurted out: &amp;quot;Man... Just don&#39;t build &lt;em&gt;crap&lt;/em&gt;&amp;quot;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I also stared at him for a few seconds and then chuckled nervously. Did I maybe not explain it properly? I knew he was technically competent and respected by clients and colleagues for his extensive experience and technical expertise. Was this the worst piece of advice I had ever received? Or actually the best?&lt;br&gt;
+Taking a step back and stopping the analysis-paralysis train from going full steam ahead might be the only really productive thing you can do at certain points in time. This applies even more if you, like me, consider yourself an over-thinker and a perfectionist.&lt;/p&gt;
+&lt;p&gt;As I read somewhere a few years later: &amp;quot;Perfect is the enemy of good&amp;quot;.&lt;/p&gt;
+&lt;p&gt;As software engineers, our code will very likely not remain in a drawer forever. Chances are extremely high that at least one other person will have the pleasure (or horror) to stumble over our creation. The second we finish writing your code and check it in, it is already obsolete and at the mercy of whoever comes after you. If the code needs to be changed - don&#39;t doubt it for a second - it will either be changed as needed or be scrapped together with the rest of the ball of mud that has formed over the years. Without the gift of clairvoyance, with your current knowledge, some daring assumptions, and the best of intentions, this is genuinely the best you can do right now.&lt;/p&gt;
+&lt;p&gt;Does that mean we should not put any thought into anything we design? Of course not - the mantra provides the answer: the result would with a high likelihood be &lt;em&gt;crap&lt;/em&gt;™. Just don&#39;t build crap.&lt;/p&gt;
+&lt;p&gt;Next time you are stuck, instead of thinking: &amp;quot;Is this really the way it is supposed to be? Is this already good enough?&amp;quot;, maybe you could stop working on it the exact second you manage to turn it into something that is just &lt;em&gt;&amp;quot;not bad&amp;quot;&lt;/em&gt; anymore. Then wait some months and look back at it. Was it really that bad?&lt;/p&gt;
+&lt;p&gt;Let me know how it went!&lt;/p&gt;
+</description>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20250317-just-dont-build-crap/</guid>
+    </item>
+    <item>
       <title>Art and Monsters</title>
       <link>https://rafaelkuebler.github.io/posts/20250308-art-and-monsters/</link>
       <description>&lt;p&gt;In June 2023 I attended a Rammstein concert in the Olympic Stadium in Munich as part of their Europe Stadium Tour. I had bought the ticket in advance. The allegations of sexual assault by some band members were still unresolved. When asking concertgoers hoarding the reusable plastic cups, they mentioned they would be able to sell these for a lot of money in a few years, since &amp;quot;this would be Rammstein&#39;s last concert&amp;quot;.&lt;/p&gt;
@@ -77,7 +97,7 @@ The warm sunny day kind of simply &amp;quot;is&amp;quot;. There probably will be
       <guid>https://rafaelkuebler.github.io/posts/20250224-wonder/</guid>
     </item>
     <item>
-      <title>What am I doing</title>
+      <title>What am I Doing</title>
       <link>https://rafaelkuebler.github.io/posts/20250203-what-am-i-doing/</link>
       <description>&lt;p&gt;First of all, I somehow feel compelled to say that I don&#39;t know what I am doing, where this is going, or how it will continue.&lt;br&gt;
 My one and only New Year&#39;s resolution for the year 2025 was to start and publish a blog, not even to write regularly, just to put it out there at first.&lt;br&gt;
