@@ -1,5 +1,5 @@
 ---
-title: What am I doing
+title: What am I Doing
 date: 2025-02-03
 layout: post.njk
 tags:
