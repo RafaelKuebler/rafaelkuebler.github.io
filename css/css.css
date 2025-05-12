@@ -85,3 +85,32 @@ a {
 a:hover {
     border-bottom: 2px solid rgba(0, 119, 204, 0.8);
 }
+
+html.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+html.dark a {
+  color: #90caf9;
+  border-bottom-color: rgba(144, 202, 249, 0.3);
+}
+
+html.dark a:hover {
+  border-bottom-color: rgba(144, 202, 249, 0.8);
+}
+
+html.dark blockquote {
+  background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+  border-left-color: #90caf9;
+}
+
+html.dark pre,
+html.dark code {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+html.dark th {
+  background: #1c1c1c;
+}
