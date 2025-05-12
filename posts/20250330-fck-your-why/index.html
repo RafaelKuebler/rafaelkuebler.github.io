@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 <body>
+    <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
     <a href= />← Home</a>
 
 <article>
@@ -41,5 +42,19 @@ I don't want to accept I cannot enjoy myself spending 3 hours in the kitchen coo
 A balanced and rested mind is more effective than an overworked one. Take time for yourself and your mental well-being.</p>
 
 </article>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // On load, apply stored preference
+        if (localStorage.getItem('dark-mode') === 'true') {
+            html.classList.add('dark');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('dark-mode', html.classList.contains('dark'));
+        });
+    </script>
 </body>
 </html>
