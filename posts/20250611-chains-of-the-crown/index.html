@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v3.1.1">
+
+    
+    <meta name="description" content="My blog">
+    
+    <title>Chains of the Crown</title>
+
+    <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
+
+    <link rel="stylesheet" href=/css/css.css>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+<body>
+    <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
+    <a href= />← Home</a>
+
+<article>
+  <p class="post-meta">
+    <time datetime="Sun May 11 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-05-11</time>
+  </p>
+  
+  <h1>Chains of the Crown</h1>
+  
+  <p>I have been pretty caught up the past days with a small GameDev project of mine. The name I have decided to give it for now is <em>Chains of the Crown</em>.</p>
+<p>Though I dream of having some sort of artistic talent sometimes, I have to admit that asset creation was never my strong suit. I dabbled here and there for some years creating my own clunky-looking Blender robots back when I was 15, but that is pretty much as far as I got.<br>
+Luckily, kind-hearted people on the Internet exist, and publish their work for free!<br>
+Scrolling through <a href="http://itch.io">itch.io</a>, I discovered <a href="https://scrabling.itch.io/pixel-isometric-tiles">a beautiful isometric tileset</a>. A few more minutes of research and more pixel art assets popped up. In this case, <a href="https://lyaseek.itch.io/minifhumans">some cute medieval characters</a>.</p>
+<p>I have long been a huge fan of the XCOM franchise. Could I ever hope to create something like this? In any case, even if I don't finish, what is the harm in starting and learning something along the way?</p>
+<p>So here is the current, still very raw state! <em>Chains of the Crown</em> is a turn-based tactical combat game, in which your character, a knight fallen from the grace of the King, joins the farmers to overthrow their repressing ruler. One thing I am especially proud of is the conservation of the axis-aligned pixel art! You see, I wanted the game to look like the screenshots of the isometric tileset I found, which includes tiles at different elevations.<br>
+At first I went the 2D route and used the tileset as it is intended: on a plat plane that only simulates depth. But placing a unit behind an elevation instantly led to a bad UX. How could you tell where your units where, at what depth, and what other places they could reach if you could not see anything behind a sufficiently high hill?</p>
+<p>After some brainstorming I found the solution!<br>
+The 2D tiles are placed on 3D positions, but &quot;billboard&quot; to always face the camera. With smart placement of the orthogonal camera, the scene looks flat and the pixels are still axis-aligned, without any gaps between them! 🥳 This approach allows pivoting the camera to face the scene from one of four possible angles at which the effect is preserved. While the tiles glitch into each other on rotation, in my opinion the fast camera movement creates a believable effect that even has its very own and unique(?) charm.</p>
+<p>There is a GIF to show the current progress!</p>
+<p><img src="/media/chains_of_the_crown.gif" alt="Chains of the Crown Work-In-Progress"></p>
+
+</article>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // On load, apply stored preference
+        if (localStorage.getItem('dark-mode') === 'true') {
+            html.classList.add('dark');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('dark-mode', html.classList.contains('dark'));
+        });
+    </script>
+</body>
+</html>
