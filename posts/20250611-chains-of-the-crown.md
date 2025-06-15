@@ -1,6 +1,6 @@
 ---
 title: Chains of the Crown
-date: 2025-05-11
+date: 2025-06-11
 layout: post.njk
 tags:
   - post
