@@ -1,45 +1,61 @@
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
-const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
+const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPlugin(feedPlugin, {
-		type: "rss",
-		outputPath: "/feed.xml",
-		collection: {
-			name: "post",
-			limit: 10,
-		},
-		metadata: {
-			language: "en",
-			title: "Rafa's blog",
-			subtitle: "Rafael's reflections on life and other things.",
-			base: "https://rafaelkuebler.github.io/",
-			author: {
-				name: "Rafael Kübler da Silva",
-				email: "rafael_kuebler@yahoo.es",
-			}
-		}
-	});
-
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("media");
-    eleventyConfig.addPassthroughCopy("favicon*");
+    eleventyConfig.addPassthroughCopy("favicon.ico");
+    eleventyConfig.addPassthroughCopy("favicon-16x16.png");
+    eleventyConfig.addPassthroughCopy("favicon-32x32.png");
 
-    eleventyConfig.addFilter("formatDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj).toISODate();
+    eleventyConfig.addFilter("formatDate", (date) => {
+        return DateTime.fromJSDate(date).toFormat("yyyy-MM-dd");
     });
 
-    let markdownOptions = {
+    eleventyConfig.addFilter("slugify", (str) => {
+        return str
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, "-")
+            .replace(/(^-|-$)/g, "");
+    });
+
+    // Configure markdown-it
+    const markdownLibrary = markdownIt({
         html: true,
         breaks: true,
         linkify: true
+    });
+
+    // Add custom image rendering with caption support
+    markdownLibrary.renderer.rules.image = function(tokens, idx) {
+        const token = tokens[idx];
+        const src = token.attrGet('src');
+        const alt = token.content;
+        const title = token.attrGet('title');
+        
+        let html = '<div class="image-container">';
+        html += `<img src="${src}" alt="${alt}" />`;
+        if (title) {
+            html += `<div class="image-caption">${title}</div>`;
+        }
+        html += '</div>';
+        
+        return html;
     };
-    let markdownLib = new markdownIt(markdownOptions);
 
-    //Add div around tables
-    markdownLib.renderer.rules.table_open = () => '<div class="table-wrapper">\n<table>\n',
-    markdownLib.renderer.rules.table_close = () => '</table>\n</div>',
+    // Add div around tables
+    markdownLibrary.renderer.rules.table_open = () => '<div class="table-wrapper">\n<table>\n';
+    markdownLibrary.renderer.rules.table_close = () => '</table>\n</div>';
 
-    eleventyConfig.setLibrary("md", markdownLib);
+    eleventyConfig.setLibrary("md", markdownLibrary);
+
+    return {
+        dir: {
+            input: ".",
+            output: "_site",
+            includes: "_includes",
+            data: "_data"
+        }
+    };
 };
