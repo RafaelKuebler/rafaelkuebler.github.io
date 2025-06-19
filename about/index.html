@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v3.1.1">
+
+    
+    <meta name="description" content="My blog">
+    
+    <title>About Me</title>
+
+    <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href=/css/css.css>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+<body>
+    <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
+    <nav class="site-nav">
+    <div class="nav-container">
+        <a href="/" class="nav-link ">Home</a>
+        <a href="/about" class="nav-link active">About</a>
+    </div>
+</nav> 
+    <main>
+        <h1>About Me</h1>
+<p>I am Rafa, a calm, creativity- and kindness-driven creature.<br>
+I am a software engineer with focus on backend technologies, currently working as IT consultant in Munich.<br>
+Some of my current hobbies include this blog, learning classic Spanish guitar, cooking, watercolors, gardening, and working on game dev projects.</p>
+<h2>About the Blog</h2>
+<p>I resolved to try to embrace my creative anture more, disregarding the urge to see the practice as only being measurable by the outcome.<br>
+As such, this blog currently is and hopefully will stay a space that is mainly my own. By me and for me.<br>
+I don't do this for profit, a better career, or external validation.</p>
+<h2>Get in Touch</h2>
+<p>I hope you like what you see and read here on the blog! ☺️<br>
+If you don't, I urge you to move on to the more important things in your life!</p>
+<p>However, if you want to reach out with some ideas, comments, or feedback, you can reach me over the icons below:</p>
+<div class="social-links">
+    <a href="https://github.com/RafaelKuebler" class="social-link" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/rafael-kuebler-da-silva/" class="social-link" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:rafael_kuebler@yahoo.com" class="social-link">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div> 
+    </main>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // On load, apply stored preference
+        if (localStorage.getItem('dark-mode') === 'true') {
+            html.classList.add('dark');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('dark-mode', html.classList.contains('dark'));
+        });
+    </script>
+</body>
+</html>

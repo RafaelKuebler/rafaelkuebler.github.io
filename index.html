@@ -12,6 +12,11 @@
 
     <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href=/css/css.css>
     
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,7 +24,14 @@
 </head>
 <body>
     <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
-    <header>
+    <nav class="site-nav">
+    <div class="nav-container">
+        <a href="/" class="nav-link active">Home</a>
+        <a href="/about" class="nav-link ">About</a>
+    </div>
+</nav> 
+    <main>
+        <header>
     <h1>Hi there!</h1>
 
     
@@ -28,69 +40,60 @@
     
 </header>
 <main>
-    <hr>
+    <h2>Posts</h2>
     
     <ul>
     
-        <li>
+        
             
-                Posts
-            
-
             
                 
+                    <li class="post-list-item">
+                        <time datetime="Wed Jun 11 2025 00:00:00 GMT+0000 (Coordinated Universal Time)" class="post-date">2025-06-11</time>
+                        <a href="/posts/20250611-chains-of-the-crown/">Chains of the Crown</a>
+                    </li>
                 
-                    <ul>
-                        
-                            <li>
-                                <time datetime="Wed Jun 11 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-06-11</time>
-                                <a href="/posts/20250611-chains-of-the-crown/">Chains of the Crown</a>
-                            </li>
-                        
-                            <li>
-                                <time datetime="Sun May 11 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-05-11</time>
-                                <a href="/posts/20250511-just-ship-it/">Just Ship It</a>
-                            </li>
-                        
-                            <li>
-                                <time datetime="Sun Mar 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-03-30</time>
-                                <a href="/posts/20250330-fck-your-why/">F*ck your Why</a>
-                            </li>
-                        
-                            <li>
-                                <time datetime="Mon Mar 17 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-03-17</time>
-                                <a href="/posts/20250317-just-dont-build-crap/">Just Don&#39;t Build Crap</a>
-                            </li>
-                        
-                            <li>
-                                <time datetime="Sat Mar 08 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-03-08</time>
-                                <a href="/posts/20250308-art-and-monsters/">Art and Monsters</a>
-                            </li>
-                        
-                            <li>
-                                <time datetime="Wed Mar 05 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-03-05</time>
-                                <a href="/posts/20250305-on-respect-and-kindness/">On Respect and Kindness</a>
-                            </li>
-                        
-                            <li>
-                                <time datetime="Mon Feb 24 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-02-24</time>
-                                <a href="/posts/20250224-wonder/">Wonder</a>
-                            </li>
-                        
-                            <li>
-                                <time datetime="Mon Feb 03 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-02-03</time>
-                                <a href="/posts/20250203-what-am-i-doing/">What am I Doing</a>
-                            </li>
-                        
-                    </ul>
+                    <li class="post-list-item">
+                        <time datetime="Sun May 11 2025 00:00:00 GMT+0000 (Coordinated Universal Time)" class="post-date">2025-05-11</time>
+                        <a href="/posts/20250511-just-ship-it/">Just Ship It</a>
+                    </li>
+                
+                    <li class="post-list-item">
+                        <time datetime="Sun Mar 30 2025 00:00:00 GMT+0000 (Coordinated Universal Time)" class="post-date">2025-03-30</time>
+                        <a href="/posts/20250330-fck-your-why/">F*ck your Why</a>
+                    </li>
+                
+                    <li class="post-list-item">
+                        <time datetime="Mon Mar 17 2025 00:00:00 GMT+0000 (Coordinated Universal Time)" class="post-date">2025-03-17</time>
+                        <a href="/posts/20250317-just-dont-build-crap/">Just Don&#39;t Build Crap</a>
+                    </li>
+                
+                    <li class="post-list-item">
+                        <time datetime="Sat Mar 08 2025 00:00:00 GMT+0000 (Coordinated Universal Time)" class="post-date">2025-03-08</time>
+                        <a href="/posts/20250308-art-and-monsters/">Art and Monsters</a>
+                    </li>
+                
+                    <li class="post-list-item">
+                        <time datetime="Wed Mar 05 2025 00:00:00 GMT+0000 (Coordinated Universal Time)" class="post-date">2025-03-05</time>
+                        <a href="/posts/20250305-on-respect-and-kindness/">On Respect and Kindness</a>
+                    </li>
+                
+                    <li class="post-list-item">
+                        <time datetime="Mon Feb 24 2025 00:00:00 GMT+0000 (Coordinated Universal Time)" class="post-date">2025-02-24</time>
+                        <a href="/posts/20250224-wonder/">Wonder</a>
+                    </li>
+                
+                    <li class="post-list-item">
+                        <time datetime="Mon Feb 03 2025 00:00:00 GMT+0000 (Coordinated Universal Time)" class="post-date">2025-02-03</time>
+                        <a href="/posts/20250203-what-am-i-doing/">What am I Doing</a>
+                    </li>
                 
             
-
-            
-        </li>
+        
     
 </ul>
 </main>
+    </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
         const html = document.documentElement;

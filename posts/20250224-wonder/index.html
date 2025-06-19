@@ -12,6 +12,11 @@
 
     <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href=/css/css.css>
     
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,9 +24,14 @@
 </head>
 <body>
     <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
-    <a href= />← Home</a>
-
-<article>
+    <nav class="site-nav">
+    <div class="nav-container">
+        <a href="/" class="nav-link ">Home</a>
+        <a href="/about" class="nav-link ">About</a>
+    </div>
+</nav> 
+    <main>
+        <article>
   <p class="post-meta">
     <time datetime="Mon Feb 24 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-02-24</time>
   </p>
@@ -43,6 +53,7 @@ The warm sunny day kind of simply &quot;is&quot;. There probably will be another
 <p>For this year, I want to be more reflective. I want to reconnect with that lost sense of wonder, with my inner child. Seeing the world through the eyes of that little girl on the beach. Forgetting about the worries, and the grocery store's closing times, and all the consequences. Not weighing experiences against one another or hunting for the next great, exciting, refreshingly novel thing. It is the realization that what we have and who we are is enough, and it is plenty. And all around us, at all times, there is something beautiful to wonder about.</p>
 
 </article>
+    </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
         const html = document.documentElement;

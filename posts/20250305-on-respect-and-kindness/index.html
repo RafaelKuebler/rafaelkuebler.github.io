@@ -12,6 +12,11 @@
 
     <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href=/css/css.css>
     
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,9 +24,14 @@
 </head>
 <body>
     <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
-    <a href= />← Home</a>
-
-<article>
+    <nav class="site-nav">
+    <div class="nav-container">
+        <a href="/" class="nav-link ">Home</a>
+        <a href="/about" class="nav-link ">About</a>
+    </div>
+</nav> 
+    <main>
+        <article>
   <p class="post-meta">
     <time datetime="Wed Mar 05 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-03-05</time>
   </p>
@@ -48,6 +58,7 @@ On this note, And I wish them good luck, and all the best.<br>
 I would not want to be this boy. And I wish him good luck, and all the best.</p>
 
 </article>
+    </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
         const html = document.documentElement;
