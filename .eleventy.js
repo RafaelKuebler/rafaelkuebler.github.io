@@ -20,6 +20,10 @@ module.exports = function(eleventyConfig) {
             .replace(/(^-|-$)/g, "");
     });
 
+    eleventyConfig.addFilter("date", (dateObj, format = "yyyy-MM-dd") => {
+        return DateTime.fromJSDate(dateObj).toFormat(format);
+    });
+
     // Configure markdown-it
     const markdownLibrary = markdownIt({
         html: true,
