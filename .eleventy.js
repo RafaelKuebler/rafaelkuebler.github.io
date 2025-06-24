@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("favicon.ico");
     eleventyConfig.addPassthroughCopy("favicon-16x16.png");
     eleventyConfig.addPassthroughCopy("favicon-32x32.png");
+    eleventyConfig.addPassthroughCopy("robots.txt");
 
     eleventyConfig.addFilter("formatDate", (date) => {
         return DateTime.fromJSDate(date).toFormat("yyyy-MM-dd");
