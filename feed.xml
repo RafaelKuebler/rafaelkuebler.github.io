@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="https://rafaelkuebler.github.io/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rafa&#39;s blog</title>
+    <link>https://rafaelkuebler.github.io/</link>
+    <atom:link href="https://rafaelkuebler.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Rafael&#39;s reflections on life and other things.</description>
+    <language>en</language>
+    <item>
+      <title>Chains of the Crown</title>
+      <link>https://rafaelkuebler.github.io/posts/20250611-chains-of-the-crown/</link>
+      <description>&lt;p&gt;I have been pretty caught up the past few days with a small GameDev project of mine. The name I have decided to give it for now is &lt;em&gt;Chains of the Crown&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Even though I dream of having some sort of artistic talent sometimes, I have to admit that asset creation was never my strong suit. I dabbled here and there for some years creating my own clunky-looking Blender robots back when I was 15, but that is pretty much as far as I got.&lt;br&gt;
+Luckily, kind-hearted people on the Internet exist, and publish their work for free!&lt;br&gt;
+Scrolling through &lt;a href=&quot;http://itch.io&quot;&gt;itch.io&lt;/a&gt;, I discovered &lt;a href=&quot;https://scrabling.itch.io/pixel-isometric-tiles&quot;&gt;a beautiful isometric tileset&lt;/a&gt;. A few more minutes of research and more pixel art assets popped up. In this case,&lt;a href=&quot;https://lyaseek.itch.io/minifhumans&quot;&gt; some cute medieval characters&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I have long been a huge fan of the XCOM franchise. Could I ever hope to create something like this? In any case, even if I don&#39;t finish, what is the harm in starting and learning something along the way?&lt;/p&gt;
+&lt;p&gt;So here is the current, still very raw state! &lt;em&gt;Chains of the Crown&lt;/em&gt; is a turn-based tactical combat game, in which your character, a knight fallen from the grace of the King, joins the farmers to overthrow their repressing ruler. One thing I am especially proud of is the conservation of the axis-aligned pixel art! You see, I wanted the game to look like the screenshots of the isometric tileset I found, which includes tiles at different elevations.&lt;br&gt;
+At first, I went the 2D route and used the tileset as it was intended: on a plane that only simulates depth. But placing a unit behind any elevation instantly led to a bad UX. How could you tell where your units were, at what depth, and what other places they could reach if you could not see anything behind a sufficiently high hill?&lt;/p&gt;
+&lt;p&gt;After some brainstorming, I found the solution!&lt;br&gt;
+The 2D tiles are placed on 3D positions, but &amp;quot;billboard&amp;quot; to always face the camera. With smart placement of the orthogonal camera, the scene looks flat and the pixels are still axis-aligned, without any gaps between them! 🥳 This approach allows pivoting the camera to face the scene from one of four possible angles at which the effect is preserved. While the tiles glitch into each other on rotation, in my opinion, the fast camera movement creates a believable effect that even has its very own unique(?) charm.&lt;/p&gt;
+&lt;p&gt;Here is a GIF to show the current progress!&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;image-container&quot;&gt;&lt;img src=&quot;https://rafaelkuebler.github.io/media/chains_of_the_crown.gif&quot; alt=&quot;Chains of the Crown Work-In-Progress&quot;&gt;&lt;div class=&quot;image-caption&quot;&gt;Demonstration of the camera rotation feature, with some unit selection and movement.&lt;/div&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+</description>
+      <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20250611-chains-of-the-crown/</guid>
+    </item>
+    <item>
+      <title>Just Ship It</title>
+      <link>https://rafaelkuebler.github.io/posts/20250511-just-ship-it/</link>
+      <description>&lt;p&gt;I have many hobby projects. In fact, every time I am working on one it becomes a bit tedious, I have an incredibly exciting different and new idea, and start working on the new one.&lt;br&gt;
+This is cool - hobby projects are not work. In fact, they should not at all be about &lt;em&gt;getting things done&lt;/em&gt;, nobody is paying you for this and there will be no consequences.&lt;/p&gt;
+&lt;p&gt;Sadly, the flip side is that projects disappear at the bottom of a deep (digital) crate and never see the light of day. After years of oblivion, you might randomly find them again, will be ashamed they ever existed, and simply delete them unceremoniously.&lt;/p&gt;
+&lt;p&gt;Why though? How can this be &amp;quot;better&amp;quot; than, even if the project is not polished and ready for the world, just putting the idea out there? Let me introduce you to the (incredibly radical, I know) idea of: &lt;strong&gt;&amp;quot;Just ship it!&amp;quot;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;With &lt;em&gt;shipping it&lt;/em&gt; I don&#39;t mean setting up a Kubernetes cluster, making your app redundant across multiple countries and test-pyramiding the hell out of it so that it never ever fails (the kind of thing you do at your paid daily job). What I mean with this is: just make it available in some way on the Internet, so that someone &lt;em&gt;might&lt;/em&gt; find it.&lt;/p&gt;
+&lt;p&gt;In the case of a GitHub repo, write a short README and make it public. If it is a website, build it statically and host it for free on GitHub Pages or Vercel or your provider of choice. For a CLI tool, document it just enough for people to run the most basic use case, then upload it somewhere.&lt;/p&gt;
+&lt;p&gt;I bet you are already feeling the internal resistance. Why is this so hard? I believe the main factor that holds you back is &lt;em&gt;shame&lt;/em&gt;. As professionals, should we not be able to build software in a professional way? Clean code, clean architecture, no bugs, perfect documentation, etc etc. I mean, what if someone saw this unfinished POC and thought: &lt;em&gt;&amp;quot;Damn dude, what an absolute amateur...&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Honestly, what I have come to believe is: nobody really cares that much. In fact, if the idea is even remotely interesting to someone stumbling over it, they will appreciate it rather than get lost in the implementation details!&lt;/p&gt;
+&lt;p&gt;To give you some more reasons why there are more advantages to &lt;em&gt;just shipping it&lt;/em&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You will feel proud! And you should! You put time and effort into something and you got it out there! Way to go!&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Just ship it&lt;/em&gt; attitude will force you to focus on the most relevant, essential parts of your idea (it would embarrassing if they are missing, right?)&lt;/li&gt;
+&lt;li&gt;Once published, you will have additional drive to iterate on the current state and improve it. This motivation to iron it out would just not be there if the project was wasting away on your hard drive.&lt;/li&gt;
+&lt;li&gt;Someone genuinely interested might find it and be entertained and inspired!&lt;/li&gt;
+&lt;li&gt;Someone might find it actually useful and ask for more features, which in turn means more motivation to work on it!&lt;/li&gt;
+&lt;li&gt;Someone might give you constructive feedback (in the form of a pull request, comment, or other). And: should you currently have no time or motivation, you can always choose to ignore it - there is literally no real pressure to immediately react.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And to address the main fear of shame: nobody has ever written to me expressing their disgust at any published project. When you find something on the Internet that you don&#39;t find mind-blowing, you simply move on.&lt;/p&gt;
+&lt;p&gt;For a very specific example, see Minecraft! You can browse the Internet and easily find out that the creator, Markus Persson (&lt;em&gt;Notch&lt;/em&gt;), is not considered to be a good programmer by the community. When Mojang employed additional programmers, the game needed a complete rewrite! So what? Minecraft had and still has a huge fanbase, even before it was sold to Microsoft for a unfathomable amounts of money! What would have happened if Notch was ashamed of his code quality an programming skills? Or could not get over &amp;quot;that one small bug that happens when you place a certain block type on top of another one&amp;quot;?&lt;/p&gt;
+&lt;p&gt;So this is a call to action: what project is dusting in your digital crate? What is the smallest delta you need to tackle to make this your &lt;em&gt;&amp;quot;minimum not-shameful product&amp;quot;&lt;/em&gt;?&lt;br&gt;
+Then go and do exactly that and get it out there! Then let me know how it went!&lt;/p&gt;
+</description>
+      <pubDate>Sun, 11 May 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20250511-just-ship-it/</guid>
+    </item>
+    <item>
+      <title>F*ck your Why</title>
+      <link>https://rafaelkuebler.github.io/posts/20250330-fck-your-why/</link>
+      <description>&lt;p&gt;I find it crazy how everything we do nowadays has to have an ulterior motive. Even your hobby projects are supposed to be a form of &lt;a href=&quot;https://www.solipsys.co.uk/new/SellYourselfSellYourWork.html&quot;&gt;advertisement for yourself, your reputation, and your career&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It always has to be &lt;em&gt;something you can write on your CV afterward&lt;/em&gt;. Did you struggle, did you hate every second of it? Well, it does not matter, it is an investment in yourself, right? In fact, &lt;em&gt;&amp;quot;the hustle is what makes you stronger, bro&amp;quot;&lt;/em&gt;!&lt;br&gt;
+You struggle through it and then you reap the delayed gratification later in the form of respect, money, and admiration as Elon Musk&#39;s hardest-working employee. Obviously, like any self-respecting grown-up you do everything for a reason. You have a purpose, a &lt;em&gt;why&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In a work context starting with your why might make sense. Your employer wants to know why he is paying you. After work, this is the single most destructive thought you can have.&lt;br&gt;
+Imagine you really feel like spending some time planting some herbs on your balcony. But the overthinking starts: how can I promote this once it is done? Maybe an automated smart herb planter on Kickstarter? Is this interesting to the FANG recruiters that might find it?&lt;br&gt;
+Is this game dev project I am excited about a waste of time - should I instead be reading up on the latest GenAI buzz?&lt;/p&gt;
+&lt;p&gt;How about you chill for a second. Yeah, just chill. How about your &lt;em&gt;why&lt;/em&gt; being &lt;em&gt;because I feel like it&lt;/em&gt; and &lt;em&gt;because it is fun&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Are you doing all these things for yourself? Or are you doing them because someone told you that &lt;em&gt;it is what you should be doing right now&lt;/em&gt;? For &amp;quot;the people that care about you&amp;quot;, but are more excited about their Bitcoin investment than about your life?&lt;br&gt;
+&lt;em&gt;&amp;quot;You should be reading up on ETFs. You should be getting that AWS certification on your weekends.&amp;quot;&lt;/em&gt; Give me a break and let me knit my socks in peace.&lt;br&gt;
+I don&#39;t want to accept I cannot enjoy myself spending 3 hours in the kitchen cooking something I really look forward to trying, because it is a &amp;quot;waste of time&amp;quot;. Instead, I apparently should be getting unhealthy crap food delivered while I write an email to my manager informing them of the great progress I made during the weekend by turning the client&#39;s success my personal quest and working unpaid overtime.&lt;/p&gt;
+&lt;p&gt;This is a very privileged view. It assumes you have a stable job and you are not getting 100% of your gratification and purpose from it. It assumes you have hobbies and passions and the feeling you never have any time for them because &amp;quot;more productive tasks&amp;quot; always overshadow them. If you feel you are unhappy with what you have, by all means, put all the energy and effort you can muster into changing it to something better.&lt;br&gt;
+A balanced and rested mind is more effective than an overworked one. Take time for yourself and your mental well-being.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20250330-fck-your-why/</guid>
+    </item>
+    <item>
+      <title>Just Don&#39;t Build Crap</title>
+      <link>https://rafaelkuebler.github.io/posts/20250317-just-dont-build-crap/</link>
+      <description>&lt;p&gt;At my first consulting client assignment ever I was struggling with the design of a software component I had been tasked with. I remember thinking about it for at least a couple of hours, trying things out, and then wondering if this was actually the way to go forward.&lt;br&gt;
+Looking back, I am sure there was an unhealthy dose of impostor&#39;s syndrome involved, and the expectation on myself for it to be perfect.&lt;br&gt;
+And I think, most importantly: none of the options were really significantly better or worse than the other options. Looking back, it was impossible to foresee how the system would continue to evolve, and the interface was possibly way too irrelevant to have any major impact on anything directly business-critical.&lt;/p&gt;
+&lt;p&gt;I decided to ask a more experienced dev and consultant for his opinion. I presented the options I had come up with, listed the pros and cons and finally rounded it up with a: &amp;quot;So what do you think makes the most sense?&amp;quot;. My colleague just stared at the screen for a few seconds, then another few seconds at me. Finally, dryly, with a shrug and a smile, he blurted out:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;Man... Just don&#39;t build &lt;em&gt;crap&lt;/em&gt;&amp;quot;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I also stared at him for a few seconds and then chuckled nervously. Did I maybe not explain it properly? I knew he was technically competent and respected by clients and colleagues for his extensive experience and technical expertise. Was this the worst piece of advice I had ever received? Or actually the best?&lt;br&gt;
+Taking a step back and stopping the analysis-paralysis train from going full steam ahead might be the only really productive thing you can do at certain points in time. This applies even more if you, like me, consider yourself an over-thinker and a perfectionist.&lt;/p&gt;
+&lt;p&gt;As I read somewhere a few years later: &amp;quot;Perfect is the enemy of good&amp;quot;.&lt;/p&gt;
+&lt;p&gt;As software engineers, our code will very likely not remain in a drawer forever. Chances are extremely high that at least one other person will have the pleasure (or horror) to stumble over our creation. The second we finish writing our code and check it in, it is already obsolete and at the mercy of whoever comes after you. If the code needs to be changed - don&#39;t doubt it for a second - it will either be changed as needed or be scrapped together with the rest of the ball of mud that has formed over the years. Without the gift of clairvoyance, with your current knowledge, some daring assumptions, and the best of intentions, this is genuinely the best you can do right now.&lt;/p&gt;
+&lt;p&gt;Does that mean we should not put any thought into anything we design? Of course not - the mantra provides the answer: the result would be &lt;em&gt;crap&lt;/em&gt;™. Just don&#39;t build crap.&lt;/p&gt;
+&lt;p&gt;Next time you are stuck, instead of thinking: &amp;quot;Is this really the way it is supposed to be? Is this already good enough?&amp;quot;, maybe you could stop working on it the exact second you manage to turn it into something that is just &lt;em&gt;&amp;quot;not bad&amp;quot;&lt;/em&gt; anymore. Then wait some months and look back at it. Was it really that bad?&lt;/p&gt;
+&lt;p&gt;Let me know how it went!&lt;/p&gt;
+</description>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20250317-just-dont-build-crap/</guid>
+    </item>
+    <item>
+      <title>Art and Monsters</title>
+      <link>https://rafaelkuebler.github.io/posts/20250308-art-and-monsters/</link>
+      <description>&lt;p&gt;In June 2023 I attended a Rammstein concert in the Olympic Stadium in Munich as part of their Europe Stadium Tour. I had bought the ticket in advance. The allegations of sexual assault by some band members were still unresolved. When asking concertgoers hoarding the reusable plastic cups, they mentioned they would be able to sell these for a lot of money in a few years, since &amp;quot;this would be Rammstein&#39;s last concert&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Since then, the Rammstein members have been cleared of any allegations, apparently due to lack of incriminating evidence. What did actually happen? What is the truth? I don&#39;t know.&lt;br&gt;
+I do know that when I listen to any Rammstein song nowadays, I feel a hesitation that was not there before. Is this still ok? Am I supporting bad people? Should I have gone to that concert while there were protests outside and people were pushing hard to cancel every single Rammstein concert across Europe?&lt;/p&gt;
+&lt;p&gt;Society clearly has mixed feelings. By our modern standards, many artists whose work we still admire can be objectively considered racist, misogynistic, or were outright murderers.&lt;br&gt;
+A quick Internet search results in names like Paul Gauguin, Pablo Picasso, Caravaggio, and many more. It feels like every year, another rapper is convicted for sexual abuse, in some instances on minors.&lt;/p&gt;
+&lt;p&gt;The central question for me is: &lt;em&gt;can art be separated from the artist&lt;/em&gt;?&lt;br&gt;
+Dissecting the sentence: &lt;em&gt;&amp;quot;the artist&amp;quot;&lt;/em&gt; clearly is the entity creating the &lt;em&gt;&amp;quot;art&amp;quot;&lt;/em&gt;. But what is &lt;em&gt;&amp;quot;art&amp;quot;&lt;/em&gt;?&lt;br&gt;
+While this clearly opens up a bigger discussion, let&#39;s also ask the question: &lt;em&gt;can art be interpreted, understood, and appreciated without taking into account its context?&lt;/em&gt;&lt;br&gt;
+If so, one could argue that the art represents something that is transcendentally &lt;em&gt;true&lt;/em&gt;, something raw, something beautiful that can stand by itself. Could the artist then be excused by their background (e.g. the time they lived in), and simply for being flawed as every other human being? Does that redeem them and their art?&lt;/p&gt;
+&lt;p&gt;In philosophy, many reflections are better understood by taking into account the philosophers&#39; time period. People used to believe that everything was made out of water, and texture and consistency were accounted for by the water being in different states of matter. Were they therefore stupid? I guess they just did not know any better. For their time, they must have been geniuses and their work groundbreaking.&lt;/p&gt;
+&lt;p&gt;The main question therefore, I believe, continues boiling down to: &lt;em&gt;do you believe there is something like transcendent truth, beauty, etc?&lt;/em&gt; Or are they all ideas and emotions that can only be understood in the human context, an invention, some quirk in our biology that makes us like geometrical forms? Is our taste in art maybe even taught - nature versus nurture?&lt;/p&gt;
+&lt;p&gt;Many questions, and the realization that neither I nor probably anyone has the answers.&lt;br&gt;
+Pragmatically, I know that I don&#39;t want to support artists that are evil. I do not believe that art redeems an artist. Through their work, they earn money, fame, and the admiration of some.&lt;br&gt;
+This also extends to other current personalities, like Logan Paul and Andrew Tate. &lt;em&gt;Stop supporting bad, stupid people.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What do you think? Was it wrong to go to that Rammstein concert?&lt;/p&gt;
+</description>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20250308-art-and-monsters/</guid>
+    </item>
+    <item>
+      <title>On Respect and Kindness</title>
+      <link>https://rafaelkuebler.github.io/posts/20250305-on-respect-and-kindness/</link>
+      <description>&lt;p&gt;I took a day off of work today due to sickness - a massive headache and a sore throat.&lt;br&gt;
+Still, I decided to go for a walk to the grocery store with my girlfriend in the afternoon, to buy some ginger, lemon, and tea.&lt;br&gt;
+On the way we had to pass through a narrow passage under some train tracks. A woman was letting her dog sniff around, taking up about half of the available space.&lt;/p&gt;
+&lt;p&gt;First we heard the bicycle bell. The boy on it was approaching the passage slowly, while continuously and intensely ringing the bell. The woman did either not understand that the ringing was meant for her, and that she was, at least to some extent, in the way. This, or she was purposefully ignoring it, not looking even in the general direction of the ringing.&lt;br&gt;
+Funnily, the kid had more than enough space to pass.&lt;/p&gt;
+&lt;p&gt;He rolled straight up to the woman, and while pushing his bike past her in slow motion, stared her down while continuing to ring. Unfazed, the woman continued on with her dog.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;As we left the situation behind, my girlfriend and I laughed and briefly debated on what had just happened. The word that kept coming to my mind was &lt;em&gt;&amp;quot;respect&amp;quot;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;By demanding respect, in his perceived superiority at this point in time, the boy actually disrespected the woman. The woman, in her lack of awareness, or open defiance, disrespected the boy and possibly everyone that was trying to traverse the narrow passage.&lt;/p&gt;
+&lt;p&gt;What makes me sad is that this boy must have hardly lived enough experiences to truly understand what he was doing. Rather, in that moment, we saw a reflection, an imitation of his parents. Demanding respect by belittling others. By pointing out what the woman with her dog was doing wrong, how the boy knew better, and by teaching her a lesson on manners and correct social behavior.&lt;/p&gt;
+&lt;p&gt;What happened to giving people the benefit of the doubt? What happened to basic kindness?&lt;/p&gt;
+&lt;p&gt;Only 10 minutes later while waiting at the cash register the older man in front of us offered us a 10% discount coupon he could not combine with the other one he already had.&lt;br&gt;
+We happily took it and thanked him profusely 15 times (not even exaggerating).&lt;/p&gt;
+&lt;p&gt;It is interesting that I took more offense at the boy trying to prove his point than at the woman blocking the way. My main reasons are that 1) the boy had plenty of space and 2) instead of just passing made special emphasis on showing the woman she was in the wrong. There was no point to prove, there was no valid reason.&lt;/p&gt;
+&lt;p&gt;I want to be a father someday. I want to be a father that teaches his children respect, but more importantly, kindness. I don&#39;t want to be like this child, or how I imagine his parents to be. I want to be the kind, old man in the supermarket.&lt;br&gt;
+Why, at any point in time, must we feel like we have the moral high ground with people that we have never even seen before, or will probably never see again? That we know &lt;em&gt;absolutely nothing&lt;/em&gt; about.&lt;br&gt;
+On this note, And I wish them good luck, and all the best.&lt;br&gt;
+I would not want to be this boy. And I wish him good luck, and all the best.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 05 Mar 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20250305-on-respect-and-kindness/</guid>
+    </item>
+    <item>
+      <title>Wonder</title>
+      <link>https://rafaelkuebler.github.io/posts/20250224-wonder/</link>
+      <description>&lt;p&gt;At the beginning of this month I spent some weeks on a somewhat remote island.&lt;br&gt;
+One sunny afternoon I had grabbed an ice cream and was sitting by the beach on a low wall, listening to the somewhat out of tune singing of a busker. Families were swimming, enjoying the sun, or just walking along the seaside.&lt;/p&gt;
+&lt;p&gt;And in between all the mundanity, another equally mundane thing really caught my attention:&lt;br&gt;
+a little girl, around 1-2 years old, was playing in the mud next to the showers on the beach. She was giggling and smiling widely, rolling in the puddles and getting it all over her fresh, white clothes.&lt;br&gt;
+Seeing her like this was an absolute delight. What carefreeness. The little, happy giggles! No worry in the world, a world that to her at this point in time must have seemed wonderful, generous, and just.&lt;br&gt;
+And then the thought popped into my mind: what will her parents say, when they see her like this? Will this upset them? This for sure would pose some work and effort for them, washing the clothes, getting her showered and cleaned up.&lt;/p&gt;
+&lt;p&gt;And then the next thought: is this little girl really doing anything wrong? Why would the clothes be more precious than this moment? When did the routine take the joy and the sparkles out of every single, beautifully unique moment? When did we lose our sense of wonder?&lt;/p&gt;
+&lt;p&gt;When we grow up and are taught that actions have consequences? When to fit in you have to act like a grown up, pay your taxes, and wash your own clothes.&lt;br&gt;
+You would never see an adult rolling in the mud, laughing obliviously, smearing themselves with dirt. &amp;quot;These clothes cost me my hard-earned money!&amp;quot; - they would say. And: &amp;quot;What would the other people think!?&amp;quot;&lt;/p&gt;
+&lt;p&gt;I noticed that I have to a large degree lost my sense of wonder. You learn to cope. When you go about your life you realize that things seem to just... &amp;quot;be&amp;quot;. &amp;quot;Be&amp;quot; as in &amp;quot;exist&amp;quot;.&lt;br&gt;
+The vacations just kind of &amp;quot;are&amp;quot;, a break between the busy and hectic months of work, between letters from your bank and the odd, unfriendly neighbors that never greet you in the hallway.&lt;br&gt;
+The warm sunny day kind of simply &amp;quot;is&amp;quot;. There probably will be another sunny day tomorrow and if not, probably next week. The ice cream you are having is alright. But just that: alright. &amp;quot;I have had better&amp;quot;.&lt;/p&gt;
+&lt;p&gt;For this year, I want to be more reflective. I want to reconnect with that lost sense of wonder, with my inner child. Seeing the world through the eyes of that little girl on the beach. Forgetting about the worries, and the grocery store&#39;s closing times, and all the consequences. Not weighing experiences against one another or hunting for the next great, exciting, refreshingly novel thing. It is the realization that what we have and who we are is enough, and it is plenty. And all around us, at all times, there is something beautiful to wonder about.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 24 Feb 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20250224-wonder/</guid>
+    </item>
+    <item>
+      <title>What am I Doing</title>
+      <link>https://rafaelkuebler.github.io/posts/20250203-what-am-i-doing/</link>
+      <description>&lt;p&gt;First of all, I somehow feel compelled to say that I don&#39;t know what I am doing, where this is going, or how it will continue.&lt;br&gt;
+My one and only New Year&#39;s resolution for the year 2025 was to start and publish a blog, not even to write regularly, just to put it out there at first.&lt;br&gt;
+This has previously been a struggle because of many issues that other (tech-y) writers probably have experienced: spending way too much time on finding a nice tech stack, template, and ideas, reflecting long and hard about what to write about, and finally and maybe most importantly impostor syndrome.&lt;br&gt;
+I had all of these stock images already picked out that I wanted to place above each one of my posts. Now looking through them I just find them cheesy and unoriginal... Who knows, maybe I will change my opinion...&lt;/p&gt;
+&lt;p&gt;In the end, I guess I just found the discipline to actually and finally get started. Just that, a first and very small step into the unknown, towards something new and exciting.&lt;/p&gt;
+&lt;p&gt;I catch myself thinking again and again: who am I doing this for? Why? I don&#39;t expect external validation from my writing, in fact, I somehow wish this could stay private. I want to tell myself that I am doing this for me alone, a space to reflect and philosophize, where I can just write about whatever topics I find interesting right now.&lt;br&gt;
+On the other hand, I admit that I have a small hope my mad ramblings might be at least curious to someone out there, in this big and too often very confusing world. Maybe even helpful.&lt;/p&gt;
+&lt;p&gt;So here you go, stranger :) I am truly happy you made your way here! Feel free to stick around and explore a little bit. You might find something interesting!&lt;/p&gt;
+</description>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20250203-what-am-i-doing/</guid>
+    </item>
+  </channel>
+</rss>
