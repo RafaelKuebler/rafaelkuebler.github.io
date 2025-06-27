@@ -3,7 +3,7 @@ layout: base.njk
 ---
 <article>
   <p class="post-meta">
-    <time datetime="{{ page.date }}">{{ page.date | formatDate }}</time>
+    <time datetime="{{ page.date }}">{{ page.date | date }}</time>
   </p>
   
   <h1>{{ title }}</h1>
