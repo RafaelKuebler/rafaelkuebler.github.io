@@ -1,5 +1,5 @@
 ---
-title: Ginger Bug ExperimentsIt
+title: Ginger Bug Experiments
 date: 2025-07-07
 layout: post.njk
 tags:
