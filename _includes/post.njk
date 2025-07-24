@@ -4,9 +4,8 @@ layout: base.njk
 <article>
   <p class="post-meta">
     <time datetime="{{ page.date }}">{{ page.date | date }}</time>
+    &bull; About {{ content | readingTime }} reading time
   </p>
-  
   <h1>{{ title }}</h1>
-  
   {{ content | safe  }}
 </article>

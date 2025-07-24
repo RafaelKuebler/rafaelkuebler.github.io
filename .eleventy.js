@@ -1,8 +1,10 @@
 const { DateTime } = require("luxon");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 const markdownIt = require("markdown-it");
+const readingTime = require("eleventy-plugin-reading-time");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(feedPlugin, {
     type: "rss",
     outputPath: "/feed.xml",
