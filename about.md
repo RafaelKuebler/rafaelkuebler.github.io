@@ -29,7 +29,7 @@ However, if you want to reach out with some ideas, comments, or feedback, you ca
     <a href="https://www.linkedin.com/in/rafael-kuebler-da-silva/" class="social-link" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-linkedin"></i>
     </a>
-    <a href="mailto:rafael_kuebler@yahoo.com" class="social-link">
+    <a href="mailto:rafael_kuebler@yahoo.es" class="social-link">
         <i class="fas fa-envelope"></i>
     </a>
 </div> 
