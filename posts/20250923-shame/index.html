@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v3.1.2">
+    <meta name="description" content="My blog">
+    <meta name="google-site-verification" content="wCT_aUtmFjTf3QKlwfOH-ZwkG4Q6lqKtsKJCubu7i1Q" />
+
+    
+    <meta name="description" content="My blog">
+    
+    <title>Shame</title>
+
+    <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href=/css/css.css>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="canonical" href="https://rafaelkuebler.github.io/posts/20250923-shame/">
+</head>
+<body>
+    <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
+    <nav class="site-nav">
+    <div class="nav-container">
+        <a href="/" class="nav-link ">Home</a>
+        <a href="/about" class="nav-link ">About</a>
+    </div>
+</nav> 
+    <main>
+        <article>
+  <p class="post-meta">
+    <time datetime="Tue Sep 23 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-09-23</time>
+    &bull; About 2 min reading time
+  </p>
+  <h1>Shame</h1>
+  <p>I went to Oktoberfest yesterday.<br>
+I was actually looking forward to it, to blow off some steam and forget about my worries for at least a few minutes. I did not go for the last 2 years, and the memories I had from before that were that it was a stinky place full of tourists.</p>
+<p>We had a table reservation this time, so the environment was nice this time. My friends are great, and the conversation was chill. Even the food was surprisingly good!</p>
+<p>But I drank way too much. To the point where I was falling around and embarrassing myself.<br>
+An Australian bloke who could barely stay on his feet himself threatened that he would kill me because he thought I was chatting up his girlfriend. I lost a 50€ bill somewhere, and after waiting for some Flammkuchen I cannot remember a single thing anymore. I just remember miraculously opening the door to my place, stumbling into the kitchen to drink some water, shattering a plate on the floor, cutting myself on my little toe, bleeding everywhere, and then falling into bed and basically passing out.</p>
+<p>I got up religiously at 8 this morning when the alarm rang to head to the office for work, but I still felt drunk and sick until noon. I did not tidy the shattered plate until a few minutes ago. Some blood splatters are still here and there, on some furniture and the laminate. The whole day has been like a trance. What the fuck am I doing?</p>
+<p>It was fun, but currently, I only feel shame. I feel guilty, dirty, and irresponsible.<br>
+I will go to Oktoberfest again, but the moral is that I have to be an adult. I knew my limits, and I chose to ignore them. This is not about being risk-averse; I acted like an idiot.</p>
+
+</article>
+    </main>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // On load, apply stored preference
+        if (localStorage.getItem('dark-mode') === 'true') {
+            html.classList.add('dark');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('dark-mode', html.classList.contains('dark'));
+        });
+    </script>
+</body>
+</html>
