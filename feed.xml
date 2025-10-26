@@ -7,6 +7,25 @@
     <description>Rafael&#39;s reflections on life and other things.</description>
     <language>en</language>
     <item>
+      <title>GameJam Constraints</title>
+      <link>https://rafaelkuebler.github.io/posts/20251026-gamejam-constraints/</link>
+      <description>&lt;p&gt;I &amp;quot;finished&amp;quot; a game! 🤩 Well, maybe finished is an overstatement. It is not like it is ready for general distribution or making money, far from it. But as a comedian once said:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&#39;s not perfect, but it&#39;s mine&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Over this weekend, some awesome colleagues from Netlight organized a GameJam in the Munich office. This time, it was not only local; even our other offices in Stockholm and Helsinki participated!&lt;br&gt;
+This is not my first Netlight GameJam. Other years at the same Netlight game jam, I first submitted the crappy &lt;a href=&quot;https://lazarus5000.itch.io/never-stop-minimarket&quot;&gt;Never Stop - Minimarket&lt;/a&gt; that I whipped up in 3 hours or so, and the much cooler &lt;a href=&quot;https://vhoruk.itch.io/how-to-summon-a-demon&quot;&gt;How to Summon a Demon&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This year was the first jam that was held under the premise of a competition. And I am proud to say that my game &lt;a href=&quot;https://lazarus5000.itch.io/tower-trials&quot;&gt;Tower Trials&lt;/a&gt; was considered by the judges (actual professional game devs!) the winner of this edition!&lt;/p&gt;
+&lt;p&gt;Apart from being an incredibly fun GameJam, one of my insights was that working with constraints, such as being a solo dev, being unable to create any game assets or artwork, and the limited time and theme, made up for a pretty focused end result that even feels quite polished! For the first time in pretty much ever, I made use of the physics engine, leading to a game where the basic mechanics did not have to be programmed. Simply throw some blocks on a pile and see what happens. Playing with the pile and the gravity is fun in itself, so the only thing left was to slap some fun twists on top, and voila, we have a game!&lt;/p&gt;
+&lt;p&gt;Midway, someone told me about Tricky Towers, another game that I apparently unconsciously copied to a certain extent. Maybe this is also what generally holds us back sometimes - we try to incorporate elements from other known, successful games, which leads to frustration and a feeling of inferiority. Instead of spoiling and potentially disappointing myself prematurely, I decided to simply not look it up and just do my thing. I was able to prioritize pretty well and finish the base mechanics fast, which left some time for low-hanging juice-it-or-lose-it visual fruits.&lt;/p&gt;
+&lt;p&gt;All in all, I am very happy with the end result and very excited to do more GameDev in my free time again. I am also excited about the fact that I can drop it wholeheartedly out there and consider it &amp;quot;good enough&amp;quot; and &amp;quot;finished&amp;quot;. If you have literally 5 minutes, head over and try it out! 🚀&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://lazarus5000.itch.io/tower-trials&quot;&gt;Click here to get to the game&lt;/a&gt;&lt;/p&gt;
+</description>
+      <pubDate>Sun, 26 Oct 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20251026-gamejam-constraints/</guid>
+    </item>
+    <item>
       <title>Shame</title>
       <link>https://rafaelkuebler.github.io/posts/20250923-shame/</link>
       <description>&lt;p&gt;I went to Oktoberfest yesterday.&lt;br&gt;
@@ -235,26 +254,6 @@ Then go and do exactly that and get it out there! Then let me know how it went!&
       <pubDate>Sun, 11 May 2025 00:00:00 GMT</pubDate>
       <dc:creator>Rafael Kübler da Silva</dc:creator>
       <guid>https://rafaelkuebler.github.io/posts/20250511-just-ship-it/</guid>
-    </item>
-    <item>
-      <title>F*ck your Why</title>
-      <link>https://rafaelkuebler.github.io/posts/20250330-fck-your-why/</link>
-      <description>&lt;p&gt;I find it crazy how everything we do nowadays has to have an ulterior motive. Even your hobby projects are supposed to be a form of &lt;a href=&quot;https://www.solipsys.co.uk/new/SellYourselfSellYourWork.html&quot;&gt;advertisement for yourself, your reputation, and your career&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It always has to be &lt;em&gt;something you can write on your CV afterward&lt;/em&gt;. Did you struggle, did you hate every second of it? Well, it does not matter, it is an investment in yourself, right? In fact, &lt;em&gt;&amp;quot;the hustle is what makes you stronger, bro&amp;quot;&lt;/em&gt;!&lt;br&gt;
-You struggle through it and then you reap the delayed gratification later in the form of respect, money, and admiration as Elon Musk&#39;s hardest-working employee. Obviously, like any self-respecting grown-up you do everything for a reason. You have a purpose, a &lt;em&gt;why&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;In a work context starting with your why might make sense. Your employer wants to know why he is paying you. After work, this is the single most destructive thought you can have.&lt;br&gt;
-Imagine you really feel like spending some time planting some herbs on your balcony. But the overthinking starts: how can I promote this once it is done? Maybe an automated smart herb planter on Kickstarter? Is this interesting to the FANG recruiters that might find it?&lt;br&gt;
-Is this game dev project I am excited about a waste of time - should I instead be reading up on the latest GenAI buzz?&lt;/p&gt;
-&lt;p&gt;How about you chill for a second. Yeah, just chill. How about your &lt;em&gt;why&lt;/em&gt; being &lt;em&gt;because I feel like it&lt;/em&gt; and &lt;em&gt;because it is fun&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Are you doing all these things for yourself? Or are you doing them because someone told you that &lt;em&gt;it is what you should be doing right now&lt;/em&gt;? For &amp;quot;the people that care about you&amp;quot;, but are more excited about their Bitcoin investment than about your life?&lt;br&gt;
-&lt;em&gt;&amp;quot;You should be reading up on ETFs. You should be getting that AWS certification on your weekends.&amp;quot;&lt;/em&gt; Give me a break and let me knit my socks in peace.&lt;br&gt;
-I don&#39;t want to accept I cannot enjoy myself spending 3 hours in the kitchen cooking something I really look forward to trying, because it is a &amp;quot;waste of time&amp;quot;. Instead, I apparently should be getting unhealthy crap food delivered while I write an email to my manager informing them of the great progress I made during the weekend by turning the client&#39;s success my personal quest and working unpaid overtime.&lt;/p&gt;
-&lt;p&gt;This is a very privileged view. It assumes you have a stable job and you are not getting 100% of your gratification and purpose from it. It assumes you have hobbies and passions and the feeling you never have any time for them because &amp;quot;more productive tasks&amp;quot; always overshadow them. If you feel you are unhappy with what you have, by all means, put all the energy and effort you can muster into changing it to something better.&lt;br&gt;
-A balanced and rested mind is more effective than an overworked one. Take time for yourself and your mental well-being.&lt;/p&gt;
-</description>
-      <pubDate>Sun, 30 Mar 2025 00:00:00 GMT</pubDate>
-      <dc:creator>Rafael Kübler da Silva</dc:creator>
-      <guid>https://rafaelkuebler.github.io/posts/20250330-fck-your-why/</guid>
     </item>
   </channel>
 </rss>

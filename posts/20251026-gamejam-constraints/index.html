@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v3.1.2">
+    <meta name="description" content="My blog">
+    <meta name="google-site-verification" content="wCT_aUtmFjTf3QKlwfOH-ZwkG4Q6lqKtsKJCubu7i1Q" />
+
+    
+    <meta name="description" content="My blog">
+    
+    <title>GameJam Constraints</title>
+
+    <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href=/css/css.css>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="canonical" href="https://rafaelkuebler.github.io/posts/20251026-gamejam-constraints/">
+</head>
+<body>
+    <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
+    <nav class="site-nav">
+    <div class="nav-container">
+        <a href="/" class="nav-link ">Home</a>
+        <a href="/about" class="nav-link ">About</a>
+    </div>
+</nav> 
+    <main>
+        <article>
+  <p class="post-meta">
+    <time datetime="Sun Oct 26 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-10-26</time>
+    &bull; About 2 min reading time
+  </p>
+  <h1>GameJam Constraints</h1>
+  <p>I &quot;finished&quot; a game! 🤩 Well, maybe finished is an overstatement. It is not like it is ready for general distribution or making money, far from it. But as a comedian once said:</p>
+<blockquote>
+<p>It's not perfect, but it's mine</p>
+</blockquote>
+<p>Over this weekend, some awesome colleagues from Netlight organized a GameJam in the Munich office. This time, it was not only local; even our other offices in Stockholm and Helsinki participated!<br>
+This is not my first Netlight GameJam. Other years at the same Netlight game jam, I first submitted the crappy <a href="https://lazarus5000.itch.io/never-stop-minimarket">Never Stop - Minimarket</a> that I whipped up in 3 hours or so, and the much cooler <a href="https://vhoruk.itch.io/how-to-summon-a-demon">How to Summon a Demon</a>.</p>
+<p>This year was the first jam that was held under the premise of a competition. And I am proud to say that my game <a href="https://lazarus5000.itch.io/tower-trials">Tower Trials</a> was considered by the judges (actual professional game devs!) the winner of this edition!</p>
+<p>Apart from being an incredibly fun GameJam, one of my insights was that working with constraints, such as being a solo dev, being unable to create any game assets or artwork, and the limited time and theme, made up for a pretty focused end result that even feels quite polished! For the first time in pretty much ever, I made use of the physics engine, leading to a game where the basic mechanics did not have to be programmed. Simply throw some blocks on a pile and see what happens. Playing with the pile and the gravity is fun in itself, so the only thing left was to slap some fun twists on top, and voila, we have a game!</p>
+<p>Midway, someone told me about Tricky Towers, another game that I apparently unconsciously copied to a certain extent. Maybe this is also what generally holds us back sometimes - we try to incorporate elements from other known, successful games, which leads to frustration and a feeling of inferiority. Instead of spoiling and potentially disappointing myself prematurely, I decided to simply not look it up and just do my thing. I was able to prioritize pretty well and finish the base mechanics fast, which left some time for low-hanging juice-it-or-lose-it visual fruits.</p>
+<p>All in all, I am very happy with the end result and very excited to do more GameDev in my free time again. I am also excited about the fact that I can drop it wholeheartedly out there and consider it &quot;good enough&quot; and &quot;finished&quot;. If you have literally 5 minutes, head over and try it out! 🚀</p>
+<p><a href="https://lazarus5000.itch.io/tower-trials">Click here to get to the game</a></p>
+
+</article>
+    </main>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // On load, apply stored preference
+        if (localStorage.getItem('dark-mode') === 'true') {
+            html.classList.add('dark');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('dark-mode', html.classList.contains('dark'));
+        });
+    </script>
+</body>
+</html>
