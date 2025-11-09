@@ -7,6 +7,22 @@
     <description>Rafael&#39;s reflections on life and other things.</description>
     <language>en</language>
     <item>
+      <title>Imperfect Role Models</title>
+      <link>https://rafaelkuebler.github.io/posts/20251109-imperfect-role-models/</link>
+      <description>&lt;p&gt;Lately, I have heard repeatedly that it is vital to have at least one role model to look up to.&lt;br&gt;
+They are supposed to inspire, motivate, and give you some sort of direction in which to develop.&lt;br&gt;
+I find it interesting because, as someone who often struggles to see my own worth and be self-confident, I have found that a healthier way to approach growth is not to compare myself to others, but to reflect on my own growth. &amp;quot;Are you better than what you were yesterday?&amp;quot; would be the guiding question that avoids feelings of inappropriateness and insecurity while still evoking a sense of purpose and direction. Are we not different from everyone else? That means that aspiring to be like someone else basically makes no sense. You can be a better you, but you don&#39;t need to be better by being &amp;quot;like someone else&amp;quot; necessarily.&lt;/p&gt;
+&lt;p&gt;A part of my struggle comes from seeing others as what they are, as what &lt;em&gt;we all&lt;/em&gt; are: &lt;em&gt;just people&lt;/em&gt;. We all have our virtues and our flaws. This may sound cynical, but is it not just the reality we live in? Don&#39;t people we respected occasionally surprise and disappoint us when they suddenly appear on the news spewing some political bullshit? We are just a continuum of imperfect people striving towards what we believe is an improvement of our condition. How can I pick anyone to wholeheartedly take on as a role model?&lt;/p&gt;
+&lt;p&gt;I chatted with some people about this, and we agreed that committing to a specific role model and embracing every side of them is impossible. Instead, we reached the consensus that &lt;em&gt;modular inspiration&lt;/em&gt; could be the way out of this one: picking only aspects of a person that we find inspiring and where we see them as an example to follow. This allows us to build a mosaic of role models, rather than locking in with a single idol.&lt;/p&gt;
+&lt;p&gt;Alternatives to role models for personal development could be more philosophically grounded, such as following an ethical or moral framework that serves as a compass. I.e., focusing on qualities we consider &amp;quot;righteous&amp;quot;: courage, generosity, humility. Striving towards an archetype that is bigger than all of us and will never reach, but fight to get closer to.&lt;br&gt;
+Or then again, maybe we are supposed to create our own values and purpose. After all, the purest authenticity comes from acting as a free agent. Is living in this limbo of isolation even possible?&lt;/p&gt;
+&lt;p&gt;I would like to embark on a short exploration phase where I try to define what my values are. Some kind of personal framework that I can look at and confidently support. A philosophy of care, compassion, integrity, and authenticity. I believe I will find role models who have attempted the same before me along the way!&lt;/p&gt;
+</description>
+      <pubDate>Sun, 26 Oct 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20251109-imperfect-role-models/</guid>
+    </item>
+    <item>
       <title>GameJam Constraints</title>
       <link>https://rafaelkuebler.github.io/posts/20251026-gamejam-constraints/</link>
       <description>&lt;p&gt;I &amp;quot;finished&amp;quot; a game! 🤩 Well, maybe finished is an overstatement. It is not like it is ready for general distribution or making money, far from it. But as a comedian once said:&lt;/p&gt;
@@ -225,35 +241,6 @@ The 2D tiles are placed on 3D positions, but &amp;quot;billboard&amp;quot; to al
       <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
       <dc:creator>Rafael Kübler da Silva</dc:creator>
       <guid>https://rafaelkuebler.github.io/posts/20250611-chains-of-the-crown/</guid>
-    </item>
-    <item>
-      <title>Just Ship It</title>
-      <link>https://rafaelkuebler.github.io/posts/20250511-just-ship-it/</link>
-      <description>&lt;p&gt;I have many hobby projects. In fact, every time I am working on one it becomes a bit tedious, I have an incredibly exciting different and new idea, and start working on the new one.&lt;br&gt;
-This is cool - hobby projects are not work. In fact, they should not at all be about &lt;em&gt;getting things done&lt;/em&gt;, nobody is paying you for this and there will be no consequences.&lt;/p&gt;
-&lt;p&gt;Sadly, the flip side is that projects disappear at the bottom of a deep (digital) crate and never see the light of day. After years of oblivion, you might randomly find them again, will be ashamed they ever existed, and simply delete them unceremoniously.&lt;/p&gt;
-&lt;p&gt;Why though? How can this be &amp;quot;better&amp;quot; than, even if the project is not polished and ready for the world, just putting the idea out there? Let me introduce you to the (incredibly radical, I know) idea of: &lt;strong&gt;&amp;quot;Just ship it!&amp;quot;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;With &lt;em&gt;shipping it&lt;/em&gt; I don&#39;t mean setting up a Kubernetes cluster, making your app redundant across multiple countries and test-pyramiding the hell out of it so that it never ever fails (the kind of thing you do at your paid daily job). What I mean with this is: just make it available in some way on the Internet, so that someone &lt;em&gt;might&lt;/em&gt; find it.&lt;/p&gt;
-&lt;p&gt;In the case of a GitHub repo, write a short README and make it public. If it is a website, build it statically and host it for free on GitHub Pages or Vercel or your provider of choice. For a CLI tool, document it just enough for people to run the most basic use case, then upload it somewhere.&lt;/p&gt;
-&lt;p&gt;I bet you are already feeling the internal resistance. Why is this so hard? I believe the main factor that holds you back is &lt;em&gt;shame&lt;/em&gt;. As professionals, should we not be able to build software in a professional way? Clean code, clean architecture, no bugs, perfect documentation, etc etc. I mean, what if someone saw this unfinished POC and thought: &lt;em&gt;&amp;quot;Damn dude, what an absolute amateur...&amp;quot;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Honestly, what I have come to believe is: nobody really cares that much. In fact, if the idea is even remotely interesting to someone stumbling over it, they will appreciate it rather than get lost in the implementation details!&lt;/p&gt;
-&lt;p&gt;To give you some more reasons why there are more advantages to &lt;em&gt;just shipping it&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You will feel proud! And you should! You put time and effort into something and you got it out there! Way to go!&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Just ship it&lt;/em&gt; attitude will force you to focus on the most relevant, essential parts of your idea (it would embarrassing if they are missing, right?)&lt;/li&gt;
-&lt;li&gt;Once published, you will have additional drive to iterate on the current state and improve it. This motivation to iron it out would just not be there if the project was wasting away on your hard drive.&lt;/li&gt;
-&lt;li&gt;Someone genuinely interested might find it and be entertained and inspired!&lt;/li&gt;
-&lt;li&gt;Someone might find it actually useful and ask for more features, which in turn means more motivation to work on it!&lt;/li&gt;
-&lt;li&gt;Someone might give you constructive feedback (in the form of a pull request, comment, or other). And: should you currently have no time or motivation, you can always choose to ignore it - there is literally no real pressure to immediately react.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And to address the main fear of shame: nobody has ever written to me expressing their disgust at any published project. When you find something on the Internet that you don&#39;t find mind-blowing, you simply move on.&lt;/p&gt;
-&lt;p&gt;For a very specific example, see Minecraft! You can browse the Internet and easily find out that the creator, Markus Persson (&lt;em&gt;Notch&lt;/em&gt;), is not considered to be a good programmer by the community. When Mojang employed additional programmers, the game needed a complete rewrite! So what? Minecraft had and still has a huge fanbase, even before it was sold to Microsoft for a unfathomable amounts of money! What would have happened if Notch was ashamed of his code quality an programming skills? Or could not get over &amp;quot;that one small bug that happens when you place a certain block type on top of another one&amp;quot;?&lt;/p&gt;
-&lt;p&gt;So this is a call to action: what project is dusting in your digital crate? What is the smallest delta you need to tackle to make this your &lt;em&gt;&amp;quot;minimum not-shameful product&amp;quot;&lt;/em&gt;?&lt;br&gt;
-Then go and do exactly that and get it out there! Then let me know how it went!&lt;/p&gt;
-</description>
-      <pubDate>Sun, 11 May 2025 00:00:00 GMT</pubDate>
-      <dc:creator>Rafael Kübler da Silva</dc:creator>
-      <guid>https://rafaelkuebler.github.io/posts/20250511-just-ship-it/</guid>
     </item>
   </channel>
 </rss>
