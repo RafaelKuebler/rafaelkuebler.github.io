@@ -7,6 +7,25 @@
     <description>Rafael&#39;s reflections on life and other things.</description>
     <language>en</language>
     <item>
+      <title>Simplicity and Less</title>
+      <link>https://rafaelkuebler.github.io/posts/20251207-simplicity-and-less/</link>
+      <description>&lt;p&gt;It has been stressful lately.&lt;br&gt;
+In part because everything always bunches up before Christmas and the burnout has been building up for some months since the summer vacations, and in part because it is simply self-imposed.&lt;/p&gt;
+&lt;p&gt;Society, work, our partners, and our family always tell us to do more. Co-found a startup, try hard to be funny, build all your hobby projects this very evening.&lt;br&gt;
+The hustle culture is praised as being ambitious and knowing what you want in life. That you are interesting and exciting in a world where dopamine hits need to be religiously supplied because - god forbid - we sit quietly on a couch together without consuming some kind of content. Always pushing and pushing until your body is exhausted and your mind can’t keep up with all the impact you are supposed to be creating and the todo list that only grows.&lt;br&gt;
+Why have one job if you can have 2? Why not volunteer on the side also? And practice for your guitar class. Or that language course. And always cook and eat healthy because your body is a temple. And exercise.&lt;br&gt;
+And hobbies. Some people have like one hobby, their whole lives. Oh but not you. You have 10 and you need to rotate through. And then you feel bad because the progress at each seems to have stagnated and you will never be able to live up to your own expectations and the ones that others might have of you.&lt;/p&gt;
+&lt;p&gt;A weird idea popped up in my head: what if per season we only had one hobby? You could sit down after work full of determination and focus fully on progressing that one thing.&lt;br&gt;
+The underlying concept is that most of the time, we are surrounded by noise. It distracts and it eats up mental bandwidth. Even if you theoretically have the time, the energy is just not there when the moment to work on something arrives.&lt;/p&gt;
+&lt;p&gt;I guess they are two extremes. The busy, manic, hectic, first option is not even that bad when you look at it: you are certainly making progress! Just look back at the state when you started weeks, months, or years ago! If you combine all hobbies, this is certainly impressive! Then why does it not feel like it? How does this feel &lt;em&gt;bad&lt;/em&gt; and frustrating at times?&lt;/p&gt;
+&lt;p&gt;If you were expecting a conclusion or solution, I regret to say I don’t have one. If any, it would be that the pressure you are making yourself is the problem. Because you are overthinking and creating expectations around achieving progress instead of enjoying the process. And if a hobby is parked for some months: so what? The world is (probably) not going to end if you miss one event. Be kind to yourself, and remember what you are doing all of this for.&lt;br&gt;
+For fun... right?&lt;/p&gt;
+</description>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 GMT</pubDate>
+      <dc:creator>Rafael Kübler da Silva</dc:creator>
+      <guid>https://rafaelkuebler.github.io/posts/20251207-simplicity-and-less/</guid>
+    </item>
+    <item>
       <title>Imperfect Role Models</title>
       <link>https://rafaelkuebler.github.io/posts/20251109-imperfect-role-models/</link>
       <description>&lt;p&gt;Lately, I have heard repeatedly that it is vital to have at least one role model to look up to.&lt;br&gt;
@@ -222,25 +241,6 @@ I am not sure how long it will take for them to grow some actual tomatoes, but I
       <pubDate>Thu, 03 Jul 2025 00:00:00 GMT</pubDate>
       <dc:creator>Rafael Kübler da Silva</dc:creator>
       <guid>https://rafaelkuebler.github.io/posts/20250703-summer-and-gardening/</guid>
-    </item>
-    <item>
-      <title>Chains of the Crown</title>
-      <link>https://rafaelkuebler.github.io/posts/20250611-chains-of-the-crown/</link>
-      <description>&lt;p&gt;I have been pretty caught up the past few days with a small GameDev project of mine. The name I have decided to give it for now is &lt;em&gt;Chains of the Crown&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Even though I dream of having some sort of artistic talent sometimes, I have to admit that asset creation was never my strong suit. I dabbled here and there for some years creating my own clunky-looking Blender robots back when I was 15, but that is pretty much as far as I got.&lt;br&gt;
-Luckily, kind-hearted people on the Internet exist, and publish their work for free!&lt;br&gt;
-Scrolling through &lt;a href=&quot;http://itch.io&quot;&gt;itch.io&lt;/a&gt;, I discovered &lt;a href=&quot;https://scrabling.itch.io/pixel-isometric-tiles&quot;&gt;a beautiful isometric tileset&lt;/a&gt;. A few more minutes of research and more pixel art assets popped up. In this case,&lt;a href=&quot;https://lyaseek.itch.io/minifhumans&quot;&gt; some cute medieval characters&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I have long been a huge fan of the XCOM franchise. Could I ever hope to create something like this? In any case, even if I don&#39;t finish, what is the harm in starting and learning something along the way?&lt;/p&gt;
-&lt;p&gt;So here is the current, still very raw state! &lt;em&gt;Chains of the Crown&lt;/em&gt; is a turn-based tactical combat game, in which your character, a knight fallen from the grace of the King, joins the farmers to overthrow their repressing ruler. One thing I am especially proud of is the conservation of the axis-aligned pixel art! You see, I wanted the game to look like the screenshots of the isometric tileset I found, which includes tiles at different elevations.&lt;br&gt;
-At first, I went the 2D route and used the tileset as it was intended: on a plane that only simulates depth. But placing a unit behind any elevation instantly led to a bad UX. How could you tell where your units were, at what depth, and what other places they could reach if you could not see anything behind a sufficiently high hill?&lt;/p&gt;
-&lt;p&gt;After some brainstorming, I found the solution!&lt;br&gt;
-The 2D tiles are placed on 3D positions, but &amp;quot;billboard&amp;quot; to always face the camera. With smart placement of the orthogonal camera, the scene looks flat and the pixels are still axis-aligned, without any gaps between them! 🥳 This approach allows pivoting the camera to face the scene from one of four possible angles at which the effect is preserved. While the tiles glitch into each other on rotation, in my opinion, the fast camera movement creates a believable effect that even has its very own unique(?) charm.&lt;/p&gt;
-&lt;p&gt;Here is a GIF to show the current progress!&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;div class=&quot;image-container&quot;&gt;&lt;img src=&quot;https://rafaelkuebler.github.io/media/chains_of_the_crown.gif&quot; alt=&quot;Chains of the Crown Work-In-Progress&quot;&gt;&lt;div class=&quot;image-caption&quot;&gt;Demonstration of the camera rotation feature, with some unit selection and movement.&lt;/div&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
-</description>
-      <pubDate>Wed, 11 Jun 2025 00:00:00 GMT</pubDate>
-      <dc:creator>Rafael Kübler da Silva</dc:creator>
-      <guid>https://rafaelkuebler.github.io/posts/20250611-chains-of-the-crown/</guid>
     </item>
   </channel>
 </rss>
