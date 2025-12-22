@@ -69,6 +69,15 @@ module.exports = function (eleventyConfig) {
     '<div class="table-wrapper">\n<table>\n';
   markdownLibrary.renderer.rules.table_close = () => "</table>\n</div>";
 
+  // add 'gallery' shortcode with clickable images
+  eleventyConfig.addShortcode("gallery", function(images) {
+    return `<details class="gallery">
+        <summary>View gallery (${images.length} images)</summary>
+        <div class="gallery-grid">${images.map(src => `<a href="${src}" target="_blank" rel="noopener"><img src="${src}" loading="lazy" alt=""></a>`).join("")}</div>
+      </details>
+    `;
+  });
+
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {
