@@ -253,3 +253,31 @@ h1 {
     margin-bottom: 0.1em;
   }
 }
+
+.gallery summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.gallery-grid img {
+  cursor: zoom-in;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.image-narrow img {
+  max-width: 60%;
+  margin: 2rem auto;
+  display: block;
+}
