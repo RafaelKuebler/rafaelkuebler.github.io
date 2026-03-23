@@ -1,15 +1,15 @@
 {
-  "name": "Rafa's Blog",
+  "name": "rafas-blog",
   "description": "Rafael's reflections on life and other things",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve",
-    "start": "npx @11ty/eleventy --serve"
+    "build": "eleventy",
+    "serve": "eleventy --serve"
   },
+  "type": "module",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@11ty/eleventy": "~3.1.5",
-    "@11ty/eleventy-plugin-rss": "~2.0.4",
+    "@11ty/eleventy-plugin-rss": "~3.0.0",
     "luxon": "~3.7.2",
     "eleventy-plugin-reading-time": "~0.0.1",
     "markdown-it": "~14.1.1",

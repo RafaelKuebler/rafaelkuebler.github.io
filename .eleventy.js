@@ -1,9 +1,10 @@
-const { DateTime } = require("luxon");
-const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
-const markdownIt = require("markdown-it");
-const readingTime = require("eleventy-plugin-reading-time");
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import { DateTime } from "luxon";
+import markdownIt from "markdown-it";
+import markdownItAnchor from "markdown-it-anchor";
+import readingTime from "eleventy-plugin-reading-time";
 
-module.exports = function (eleventyConfig) {
+export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(feedPlugin, {
     type: "rss",
@@ -45,7 +46,7 @@ module.exports = function (eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true,
-  });
+  }).use(markdownItAnchor);
 
   // Add custom image rendering with caption support
   markdownLibrary.renderer.rules.image = function (tokens, idx) {
@@ -88,4 +89,4 @@ module.exports = function (eleventyConfig) {
       data: "_data",
     },
   };
-};
+}
