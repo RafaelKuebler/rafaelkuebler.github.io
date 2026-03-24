@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v3.1.5">
+    <meta name="description" content="C# implementation of the Bowyer–Watson algorithm for Delaunay triangulation and Voronoi diagram generation.">
+    <meta name="google-site-verification" content="wCT_aUtmFjTf3QKlwfOH-ZwkG4Q6lqKtsKJCubu7i1Q" />
+
+    
+    <meta name="description" content="My blog">
+    
+    <title>Delaunay Triangulation &amp; Voronoi Diagrams</title>
+
+    <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href=/css/css.css>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="canonical" href="https://rafaelkuebler.github.io/projects/delaunay-voronoi/">
+</head>
+<body>
+    <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
+    <nav class="site-nav">
+    <div class="nav-container">
+        <a href="/" class="nav-link ">Home</a>
+        <a href="/projects/" class="nav-link active">Projects</a>
+        <a href="/about" class="nav-link ">About</a>
+    </div>
+</nav> 
+    <main>
+        <article>
+  
+  <h1>Delaunay Triangulation &amp; Voronoi Diagrams</h1>
+  
+    <p class="project-meta">
+      <a href="https://github.com/RafaelKuebler/DelaunayVoronoi" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </p>
+  
+  <p>A C# implementation of the <a href="https://en.wikipedia.org/wiki/Bowyer%E2%80%93Watson_algorithm">Bowyer–Watson algorithm</a> that computes Delaunay triangulations and their dual Voronoi diagrams from a set of randomly distributed points.</p>
+<h2 id="what-is-it%3F" tabindex="-1">What is it?</h2>
+<p>Given a set of points in 2D space, the algorithm produces:</p>
+<ul>
+<li>A <strong>Delaunay triangulation</strong> – a triangulation where no point lies inside the circumcircle of any triangle, maximising the minimum angle and avoiding sliver triangles.</li>
+<li>A <strong>Voronoi diagram</strong> – the dual graph of the triangulation, partitioning the plane into regions where each region contains all points closest to one input point.</li>
+</ul>
+<p>Both structures are fundamental in computational geometry and appear everywhere from procedural terrain generation to cell simulations.</p>
+<h2 id="why-c%23%3F" tabindex="-1">Why C#?</h2>
+<p>The implementation targets C# to make it straightforward to port into the Unity game engine for use in procedural generation projects.</p>
+<h2 id="performance" tabindex="-1">Performance</h2>
+<p>The visualisation runs comfortably with <strong>5 000 points</strong> in real time using a WPF canvas for rendering.</p>
+
+  <p class="project-back">
+    <a href="/projects/">← Projects</a>
+  </p>
+</article>
+
+    </main>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // On load, apply stored preference
+        if (localStorage.getItem('dark-mode') === 'true') {
+            html.classList.add('dark');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('dark-mode', html.classList.contains('dark'));
+        });
+    </script>
+</body>
+</html>

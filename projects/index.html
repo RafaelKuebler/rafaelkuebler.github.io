@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v3.1.5">
+    <meta name="description" content="My blog">
+    <meta name="google-site-verification" content="wCT_aUtmFjTf3QKlwfOH-ZwkG4Q6lqKtsKJCubu7i1Q" />
+
+    
+    <meta name="description" content="My blog">
+    
+    <title>Projects</title>
+
+    <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href=/css/css.css>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="canonical" href="https://rafaelkuebler.github.io/projects/">
+</head>
+<body>
+    <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
+    <nav class="site-nav">
+    <div class="nav-container">
+        <a href="/" class="nav-link ">Home</a>
+        <a href="/projects/" class="nav-link active">Projects</a>
+        <a href="/about" class="nav-link ">About</a>
+    </div>
+</nav> 
+    <main>
+        <h1>Projects</h1>
+
+<div class="project-grid">
+  
+    <a href="/projects/delaunay-voronoi/" class="project-card">
+      
+      <div class="project-card-body">
+        <h2 class="project-card-title">Delaunay Triangulation &amp; Voronoi Diagrams</h2>
+        
+          <p class="project-card-desc">C# implementation of the Bowyer–Watson algorithm for Delaunay triangulation and Voronoi diagram generation.</p>
+        
+        
+          <span class="project-card-github">
+            <i class="fab fa-github"></i> GitHub
+          </span>
+        
+      </div>
+    </a>
+  
+    <a href="/projects/flocking/" class="project-card">
+      
+      <div class="project-card-body">
+        <h2 class="project-card-title">Flocking Simulation</h2>
+        
+          <p class="project-card-desc">2D emergent flocking behaviour in Unity3D using Craig Reynolds&#39; boids algorithm.</p>
+        
+        
+          <span class="project-card-github">
+            <i class="fab fa-github"></i> GitHub
+          </span>
+        
+      </div>
+    </a>
+  
+    <a href="/projects/gobot/" class="project-card">
+      
+      <div class="project-card-body">
+        <h2 class="project-card-title">GoSenseiBot</h2>
+        
+          <p class="project-card-desc">A Telegram bot that lets you play the board game Go in any chat, rendering the board after every move.</p>
+        
+        
+          <span class="project-card-github">
+            <i class="fab fa-github"></i> GitHub
+          </span>
+        
+      </div>
+    </a>
+  
+    <a href="/projects/plantuml-design-patterns/" class="project-card">
+      
+      <div class="project-card-body">
+        <h2 class="project-card-title">PlantUML Design Patterns</h2>
+        
+          <p class="project-card-desc">All 23 GoF design patterns as PlantUML diagrams, with a Python script to render them all at once.</p>
+        
+        
+          <span class="project-card-github">
+            <i class="fab fa-github"></i> GitHub
+          </span>
+        
+      </div>
+    </a>
+  
+</div>
+
+    </main>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // On load, apply stored preference
+        if (localStorage.getItem('dark-mode') === 'true') {
+            html.classList.add('dark');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('dark-mode', html.classList.contains('dark'));
+        });
+    </script>
+</body>
+</html>

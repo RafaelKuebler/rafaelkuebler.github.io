@@ -111,12 +111,14 @@ a:hover,
 }
 
 html.dark {
+  --link-color: #90caf9;
+  --link-hover-color: #bbdefb;
+  --text-color: #f1f1f1;
   background: #121212;
   color: #f1f1f1;
 }
 
 html.dark a {
-  color: #90caf9;
   border-bottom-color: rgba(144, 202, 249, 0.3);
 }
 
@@ -204,12 +206,12 @@ hr {
 
 .social-link {
     font-size: 1.5rem;
-    color: var(--link-color) !important;
+    color: var(--link-color);
     transition: color 0.3s ease;
 }
 
 .social-link:hover {
-    color: var(--link-color);
+    color: var(--link-hover-color);
 }
 
 .post-list-item {
@@ -280,4 +282,51 @@ h1 {
   max-width: 60%;
   margin: 2rem auto;
   display: block;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.project-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+.project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+    display: block;
+}
+.project-card-body { padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 0.3rem; flex: 1; }
+.project-card-title { font-size: 1rem; font-weight: 500; margin: 0; color: var(--link-color); }
+.project-card-desc  { font-size: 0.85em; color: #666; margin: 0; line-height: 1.4; }
+.project-card-github { font-size: 0.8em; color: #888; margin-top: auto; padding-top: 0.5rem; }
+
+html.dark .project-card { border-color: #333; }
+html.dark .project-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.4); }
+html.dark .project-card-desc, html.dark .project-card-github { color: #aaa; }
+
+.project-meta { font-size: 0.9em; color: #666; margin-bottom: 1.5rem; }
+.project-meta a { color: var(--link-color); }
+.project-back { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border-color); font-size: 0.95em; }
+
+@media (max-width: 600px) {
+    .project-grid { grid-template-columns: 1fr; }
 }

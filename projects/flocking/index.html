@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Eleventy v3.1.5">
-    <meta name="description" content="My blog">
+    <meta name="description" content="2D emergent flocking behaviour in Unity3D using Craig Reynolds&#39; boids algorithm.">
     <meta name="google-site-verification" content="wCT_aUtmFjTf3QKlwfOH-ZwkG4Q6lqKtsKJCubu7i1Q" />
 
     
     <meta name="description" content="My blog">
     
-    <title>You Deserve Better</title>
+    <title>Flocking Simulation</title>
 
     <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
 
@@ -24,41 +24,45 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-    <link rel="canonical" href="https://rafaelkuebler.github.io/posts/20250915-you-deserve-better/">
+    <link rel="canonical" href="https://rafaelkuebler.github.io/projects/flocking/">
 </head>
 <body>
     <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem;">🌓</button>
     <nav class="site-nav">
     <div class="nav-container">
         <a href="/" class="nav-link ">Home</a>
-        <a href="/projects/" class="nav-link ">Projects</a>
+        <a href="/projects/" class="nav-link active">Projects</a>
         <a href="/about" class="nav-link ">About</a>
     </div>
 </nav> 
     <main>
         <article>
-  <p class="post-meta">
-    <time datetime="Mon Sep 15 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">2025-09-15</time>
-    &bull; About 1 min reading time
-  </p>
-  <h1>You Deserve Better</h1>
-  <p>You deserve someone that wants to be with you.<br>
-You deserve someone that does not need convincing of you worth.<br>
-You deserve someone emotionally mature and stable, that communicates their feelings clearly and openly.</p>
-<p>Currently, you are consumed by the emotions: the pain, the disappointment, and the betrayal.<br>
-But you will focus on the facts. You dodged a bullet.<br>
-This would have happened sooner or later, and it is good it happened now.</p>
-<p>You don't need them. They need you. You are fine without them.</p>
-<p>You gave everything, it will never be enough for the wrong person.<br>
-For the right person, you will be enough even on your worst days.</p>
-<p>You will not give yourself up and put your mental stability on the line for someone that is not willing to do the same for you. You deserve someone that decides even in uncertain times that the relationship is more important than the discomfort. That shows up even if it is not their current first priority, and invests energy in you.</p>
-<p>You gave up many things because you thought the next step would be a life together.<br>
-But you have time, and there is so much yet to see.<br>
-You will focus on what brings you joy. Meeting your friends and family, and others that truly care about you.<br>
-Attend random events, and do the things that you have always wanted to do.</p>
-<p>You deserve better.</p>
+  
+  <h1>Flocking Simulation</h1>
+  
+    <p class="project-meta">
+      <a href="https://github.com/RafaelKuebler/Flocking" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </p>
+  
+  <p>A 2D simulation of Craig Reynolds' classic <a href="https://en.wikipedia.org/wiki/Boids">boids algorithm</a> built in Unity3D, where hundreds of independent agents produce lifelike flocking behaviour from just three simple rules.</p>
+<h2 id="the-rules" tabindex="-1">The Rules</h2>
+<p>Each boid looks at its neighbours and applies three steering forces:</p>
+<ol>
+<li><strong>Separation</strong> – steer away from boids that are too close to avoid crowding.</li>
+<li><strong>Alignment</strong> – steer towards the average heading of nearby boids.</li>
+<li><strong>Cohesion</strong> – steer towards the average position of nearby boids to stay with the flock.</li>
+</ol>
+<p>No boid has any global knowledge of the flock. The emergent group behaviour – splitting around obstacles, reforming, spiralling – arises entirely from these local interactions.</p>
+<h2 id="implementation" tabindex="-1">Implementation</h2>
+<p>Built in Unity3D with C#. Inspired by the Processing flocking example by Daniel Shiffman.</p>
 
+  <p class="project-back">
+    <a href="/projects/">← Projects</a>
+  </p>
 </article>
+
     </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
