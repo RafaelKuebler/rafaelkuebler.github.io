@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: Projects
+permalink: /projects/
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  layout: "base.njk"
+---
+<h1>Projects</h1>
+
+<div class="project-grid">
+  {% for project in collections.project %}
+    <a href="{{ project.url | url }}" class="project-card">
+      {% if project.data.image %}
+        <img src="{{ project.data.image | url }}" alt="{{ project.data.title }}">
+      {% endif %}
+      <div class="project-card-body">
+        <h2 class="project-card-title">{{ project.data.title }}</h2>
+        {% if project.data.description %}
+          <p class="project-card-desc">{{ project.data.description }}</p>
+        {% endif %}
+        {% if project.data.github %}
+          <span class="project-card-github">
+            <i class="fab fa-github"></i> GitHub
+          </span>
+        {% endif %}
+      </div>
+    </a>
+  {% else %}
+    <p>No projects yet.</p>
+  {% endfor %}
+</div>

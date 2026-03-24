@@ -79,6 +79,10 @@ export default async function (eleventyConfig) {
     `;
   });
 
+  eleventyConfig.addCollection("project", function(collectionApi) {
+    return collectionApi.getFilteredByTag("project");
+  });
+
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {

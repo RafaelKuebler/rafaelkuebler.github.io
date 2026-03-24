@@ -1,0 +1,22 @@
+---
+layout: base.njk
+---
+<article>
+  {% if image %}
+    <div class="project-hero">
+      <img src="{{ image | url }}" alt="{{ title }}">
+    </div>
+  {% endif %}
+  <h1>{{ title }}</h1>
+  {% if github %}
+    <p class="project-meta">
+      <a href="{{ github }}" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </p>
+  {% endif %}
+  {{ content | safe }}
+  <p class="project-back">
+    <a href="/projects/">← Projects</a>
+  </p>
+</article>
