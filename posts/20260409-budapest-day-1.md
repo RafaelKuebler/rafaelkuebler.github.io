@@ -169,6 +169,6 @@ However, just three blocks away, I somehow also manage to get into the [Instant-
 
 I find my little techno room all the way in the back again and bounce to the music for some hours, fueled by 3 very weak Cuba Libres.
 
-When I leave at 3am, the queue outside is massive again. After a few steps, I notice I am starving, and the [Greek Taverna Melissa Bisztro](https://maps.app.goo.gl/LrQUy2RDJG59ZHkP8) looks like the most inviting restaurant in the world. So I get an awesome Gyros Pita and eat it during the walk back to the hostel.
+When I leave at 3am, the queue outside is massive again. After a few steps, I notice I am starving, and the [Greek Taverna Melissa Bisztro](https://maps.app.goo.gl/LrQUy2RDJG59ZHkP8) looks like the most invigitting restaurant in the world. So I get an awesome Gyros Pita and eat it during the walk back to the hostel.
 
 As I arrive, I go to sleep. And that, folks, was day one!
