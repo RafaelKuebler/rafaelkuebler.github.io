@@ -125,7 +125,7 @@ The weather is perfect! Almost 20°C and super sunny! I take a small break to ph
 
 <div class="image-narrow">
 
-![Time Out Burger](/media/budapest/burger.jpeg "Time Out Marker "Umami burger" 🍔")
+![Time Out Burger](/media/budapest/burger.jpeg "Time Out Market's Umami burger 🍔")
 
 </div>
 
@@ -133,7 +133,7 @@ After this, the food coma hits, and I am a bit aimless. It is 4pm, and I have on
 
 <div class="image-narrow">
 
-![Mustache Hostel bunk beds](/media/budapest/hostel.jpeg "Bunk Beds at the Mustache Hostel. The bottom one, number 7, is mine.")
+![Mustache Hostel bunk beds](/media/budapest/hostel.jpeg "Bunk beds at the Mustache Hostel. The bottom one, number 7, is mine.")
 
 </div>
 
