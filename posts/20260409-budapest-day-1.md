@@ -41,7 +41,7 @@ I booked 2 nights at the [Mustache Hostel](https://maps.app.goo.gl/y5QVWCMSVM4Mf
 ---
 
 I have to admit that I did not do much research before arriving 🙈
-I looked up some blog posts and YouTube videos but ultimately had no idea what was where in the city. So I wander around aimlessly and discover that shops and cafés don't open until around 10am, including the [Hungarian National Museum](https://maps.app.goo.gl/rHMYEp6xz2RveK9m6) that I randomly find nearby. At least the gardens are really cool!
+I looked up some blog posts and YouTube videos but ultimately have no idea what was where in the city. So I wander around aimlessly and discover that shops and cafés don't open until around 10am, including the [Hungarian National Museum](https://maps.app.goo.gl/rHMYEp6xz2RveK9m6) that I randomly find nearby. At least the gardens are really cool!
 
 <div class="image-narrow">
 
@@ -58,13 +58,12 @@ I looked up some blog posts and YouTube videos but ultimately had no idea what w
 </div>
 
 A girl is studying on a nearby desk, so I ask her if she speaks English, and if she is from here.
-She is called Lilly and is an economy student writing her master's thesis. Lilly gives me some recommendations of both tourist places that must-sees and her local highlights. Awesome!
-On another topic: her thesis is a comparison between the economies of Romania and Hungary.
-When I ask who is winning, the response is *"both are pretty bad"* 😭
-I thank her and ask her what she is doing later, and she informs me that she has to hand in her thesis in 6 days. Well, ok.
+She is called Lilly and is an economy student writing her master's thesis. Lilly gives me some recommendations of both tourist places that are must-sees, and her local highlights. Awesome!
+Her thesis is a comparison between the economies of Romania and Hungary. When I ask who is winning, the response is *"both are pretty bad"* 😭
+I thank her and ask her what she is doing later, and she informs me that she has to hand in her thesis in 6 days. Well, ok. That's that I guess.
 
 Her main recommendation is [Buda Castle](https://maps.app.goo.gl/DKa8XjZaTo9di7ty9), then crossing over the [Széchenyi Chain Bridge](https://maps.app.goo.gl/DKa8XjZaTo9di7ty9) to the city center and going to the [Hungarian Parliament Building](https://maps.app.goo.gl/qBzPgigepThc5oVe6) and the [St. Stephen's Basilica](https://maps.app.goo.gl/TXgbVHpCqHErchiH7). But all of that is quite a walk from the coffee shop.
-I *did* however bookmark the [Central Market Hall](https://maps.app.goo.gl/t616Po1WS2mGhGh66), which actually *is* nearby, so I head in that direction. There is a [cute street cart that has second-hand books](https://maps.app.goo.gl/nzCyzMH7HS8EpKji6) for 500 HUF each in a lot of languages, but I don't find anything interesting.
+I *did* however bookmark the [Central Market Hall](https://maps.app.goo.gl/t616Po1WS2mGhGh66) on my Google Maps, and it is actually nearby, so I head in that direction. There is a [cute street cart that has second-hand books](https://maps.app.goo.gl/nzCyzMH7HS8EpKji6) for 500 HUF each in a lot of languages, but I don't find anything interesting.
 
 I try to get a bagel at [Budapest Bagel](https://maps.app.goo.gl/qGbm7ZD5FZzfv9qYA), but they tell me they will need about 15 to 20 minutes to unload the truck. I don't understand, they were supposed to be open for 2 hours already. Whatever, I just continue.
 I find an ATM and withdraw 20,000 HUF. It feels like a lot of money.
@@ -73,7 +72,7 @@ When I arrive at the Central Market Hall I discover it is actually closed today.
 
 <div class="image-side-by-side"> 
 
-![Central Market Hall](/media/budapest/food_market.jpeg "The central market hall, from afar")
+![Central Market Hall](/media/budapest/food_market.jpeg "The central market hall")
 ![Closed Central Market Hall](/media/budapest/closed_food_market.jpeg "Guess I will come back another day")
 
 </div>
@@ -84,12 +83,12 @@ I cross over [Liberty Bridge](https://maps.app.goo.gl/gs8TPib2WFaDaAXt9) and tak
 
 <div class="image-side-by-side"> 
 
-![Gellert Thermal Bath](/media/budapest/baths.jpeg)
-![Closed Gellert Bath](/media/budapest/closed_baths.jpeg)
+![Gellert Thermal Bath](/media/budapest/baths.jpeg "Gellért Thermal Bath")
+![Closed Gellert Bath](/media/budapest/closed_baths.jpeg "Guess I will also come back another day")
 
 </div>
 
-I am curious about some kind of large metal entrance. So I head inside and pay 1,400 HUF in cash, with two 1,000 HUF bills. I get back a literal handful of coins (7 or 8 pretty large ones). 600 HUF or 1.50€ (quick maths). Great 😒
+I am curious about some kind of large metal entrance. So I head inside and pay 1,400 HUF in cash, with two 1,000 HUF bills. I get back a literal handful of coins (7 or 8 pretty large ones). 600 HUF, or 1.50€ (quick maths). Great 😒
 But it turns out I am in the [Gellért Hill Cave](https://maps.app.goo.gl/pJq4v6ySXc3a1zUd7), a historic chapel and monastery in the mountain!
 
 <div class="image-narrow">
@@ -98,16 +97,16 @@ But it turns out I am in the [Gellért Hill Cave](https://maps.app.goo.gl/pJq4v6
 
 </div>
 
-While the cave itself is fascinating, I think religious folks will enjoy the experience more than I did. So I give back my audio guide and hike up the hill. The view of the Danube and the south of Buda and Pest is great!
+While the cave itself is fascinating, I think religious folks will enjoy the experience more than I did. So I give back my audio guide and hike up the hill. The view of the Danube and the south of Buda and Pest is great! Budapest was officially created in 1873, by the unification of three cities: Buda and Óbuda (on the west bank of the Danube, hilly and historic) and Pest (on the east bank, more commercial).
 
-![Danube view from Citadel](/media/budapest/danube_citadel.jpeg "The view of the Danube and the south of Pest from the Citadel")
+![Danube view from Citadel](/media/budapest/danube_citadel.jpeg "The view of the Danube and the south of Buda and Pest from the Citadel. At the bottom, the Central Market Hall and the Corvinus University of Budapest (left side of the Danube), the Liberty Bridge (center) and the Gellert Thermal Bath (right).")
 
-There are plenty of areas to stop and take pictures, and there were also plenty of tourists. When I reach the top I discover that the Citadel area itself is closed for renovation... This too? How? Is everything in this city being renovated?
+There are plenty of areas to stop and take pictures, and there are also plenty of tourists. When I reach the top I discover that the Citadel area itself is closed for renovation... This too? How? Is everything in this city being renovated?
 I take a picture over the fence and head back down again.
 
 <div class="image-side-by-side"> 
 
-![Closed Citadel](/media/budapest/closed_citadel.jpeg "The Citadel from afar. The fence blocks the entrance 🙁")
+![Closed Citadel](/media/budapest/closed_citadel.jpeg "The Citadel. The fence blocks the entrance 🙁")
 ![Citadel over fence](/media/budapest/citadel.jpeg "The Citadel from over the fence")
 
 </div>
@@ -122,15 +121,15 @@ So I cross back to the Pest-side of the Danube, over the [Elisabeth Bridge](http
 
 </div>
 
-The weather is perfect! Almost 20°C and super sunny! I take a small break to phone my family and friends, and without even noticing I arrive at the [Time Out Market Bedapest](https://maps.app.goo.gl/yMtiqGWAVdsZNRtR6). I eat an awesome "Umami Burger" with fries and truffle mayo. Yum! 😋
+The weather is perfect! Almost 20°C and super sunny! I take a small break to phone my family and friends, and without even noticing I arrive at the [Time Out Market](https://maps.app.goo.gl/yMtiqGWAVdsZNRtR6). There are too many options, but I decide to treat myself an awesome "Umami Burger" with fries and truffle mayo. Yum! 😋
 
 <div class="image-narrow">
 
-![Time Out Burger](/media/budapest/burger.jpeg "Umami burger 🍔")
+![Time Out Burger](/media/budapest/burger.jpeg "Time Out Marker "Umami burger" 🍔")
 
 </div>
 
-After this, the food coma hits, and I am a bit aimless. It is 4pm, and I have only seen totally random things, the places I actually wanted to see were being renovated, and my trajectory on the map is just an elongated, wonky ellipse almost back to the hostel. So why not head back to the hostel! 😅 When I arrive I crash, and I have a much needed 2 hour "nap" in my bunk bed. Got the bottom one, praise all the gods!
+After this, the food coma hits, and I am a bit aimless. It is 4pm, and I have only seen totally random things, the places I actually wanted to see were being renovated, and my trajectory on the map is just an elongated, wonky ellipse that almost leads back to the hostel. So why not head back to the hostel!? 😅 When I arrive I crash, and I have a much needed 2 hour "nap" in my bunk bed. Got the bottom one, praise all the gods!
 
 <div class="image-narrow">
 
@@ -138,7 +137,7 @@ After this, the food coma hits, and I am a bit aimless. It is 4pm, and I have on
 
 </div>
 
-When I wake up again I am destroyed. I notice that I forgot my flipflops. Alrighty. But life is short! So I shower without and go party 😂
+When I wake up again, I am destroyed. I notice that I forgot my flipflops. Alrighty. But life is short! So I shower without and go party 😂
 [Szimpla Kert](https://maps.app.goo.gl/39nxVqHudAnjZ2ut9), aka the most well-known ruin bar, is just a few blocks away! And I loved the place! I was so early I did not even have to wait in line!
 It is a super cool location to hang out with friends and drink a few beers... if only I had some friends with me 🤷‍♂️ Instead, I follow the music, which takes me to a surprisingly small room with surprisingly little people. Seems the techno raver culture is not really a thing here.
 
@@ -158,18 +157,18 @@ It is a super cool location to hang out with friends and drink a few beers... if
 I chat to a friendly couple that are watching over my jacket by the side of the dance floor. They are Spaniards from Madrid and are leaving early tomorrow. But they recommend doing a cruise (preferably at night) on the Danube. I make a mental note.
 I chat to the next group of people. They are Germans from Mannheim and are also leaving early tomorrow. Just my luck 😅 One of the girls has birthday and organized the trip, 5 friends out of 33 showed up. Bummer. She seems to be fine with it: *"I do not really like those people anyway"*.
 As the DJ switches and the new one starts playing some ethereal hip hop chill mix, the German group gets bored and leave to smoke shisha upstairs. I am sad that the party here is over, and look for the next thing nearby.
-When I leave, the queue to go in has grown massive, but you can semi-officially slip the security guys 10€, and they sneak you in. I wonder if I am going to regret leaving if I want to come back later.
+When I leave, the queue to go in has grown massive, but I overhear you can semi-officially slip the security guys 10€, and they sneak you in. I wonder if I am going to regret leaving if I want to come back later.
 
-However, just three blocks away, I somehow also manage to get into the [Instant-Fogas Complex](https://maps.app.goo.gl/BEqJKZcmyzsUw1fdA) without any queue! 🥳 People keep streaming in constantly. And of course, the place is huge. Multiple rooms and floors playing different types of music. Even a live funk band that I miss by just a few seconds! The band is quickly replaced by conventional EDM and party music (such as Taylor Swift, Bad Bunny, and David Guetta).
+However, just three blocks away, I somehow also manage to get into the [Instant-Fogas Complex](https://maps.app.goo.gl/BEqJKZcmyzsUw1fdA) without any queue! 🥳 People keep streaming in constantly. And of course, the place is huge. Multiple rooms and floors playing different types of music. Even a live funk band that I miss by just a few seconds! The band is quickly replaced by conventional EDM and party music (Taylor Swift, Bad Bunny, and David Guetta). Sad.
 
 <div class="image-narrow">
 
-![Instant-Fogas Complex](/media/budapest/disco.jpeg "The bursting-full Instant-Fogas Complex inner courtyard at 2am.")
+![Instant-Fogas Complex](/media/budapest/disco.jpeg "The bursting-full inner courtyard of the Instant-Fogas Complex at 2am.")
 
 </div>
 
 I find my little techno room all the way in the back again and bounce to the music for some hours, fueled by 3 very weak Cuba Libres.
 
-When I leave, the queue outside is massive again. After a few steps, I notice I am starving, and the [Greek Taverna Melissa Bisztro](https://maps.app.goo.gl/LrQUy2RDJG59ZHkP8) looks like the most inviting restaurant in the world. So I get an awesome Gyros Pita and eat it during the walk back to the hostel.
+When I leave at 3am, the queue outside is massive again. After a few steps, I notice I am starving, and the [Greek Taverna Melissa Bisztro](https://maps.app.goo.gl/LrQUy2RDJG59ZHkP8) looks like the most inviting restaurant in the world. So I get an awesome Gyros Pita and eat it during the walk back to the hostel.
 
 As I arrive, I go to sleep. And that, folks, was day one!
