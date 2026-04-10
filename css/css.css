@@ -42,7 +42,7 @@ img, blockquote, pre, table {
 
 img {
     max-width: 100%;
-    margin: 1em auto;
+    margin: 1em auto 0.3em;
     display: block;
     border-radius: 8px;
 }
@@ -51,11 +51,21 @@ img {
     margin: 1em auto;
 }
 
+.image-container img {
+    margin-bottom: 0.2em;
+}
+
+p:has(.image-container) {
+    margin: 0;
+    line-height: 0;
+}
+
 .image-caption {
     text-align: center;
     font-size: 0.9em;
     color: #666;
-    margin-top: 0.5em;
+    margin-top: 0.2em;
+    line-height: 1.4;
 }
 
 blockquote {
@@ -254,6 +264,12 @@ h1 {
     font-size: 0.95em;
     margin-bottom: 0.1em;
   }
+  .image-side-by-side {
+    flex-direction: column;
+  }
+  .image-side-by-side img {
+    max-width: 100%;
+  }
 }
 
 .gallery summary {
@@ -265,6 +281,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 0.75rem;
+  align-items: center;
 }
 
 .gallery-grid img {
@@ -280,8 +297,36 @@ h1 {
 
 .image-narrow img {
   max-width: 60%;
-  margin: 2rem auto;
+  margin: 2rem auto 0.2em;
   display: block;
+}
+
+.image-narrow .image-caption {
+  margin-top: 0.2em;
+}
+
+.image-side-by-side {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+.image-side-by-side p {
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.image-side-by-side .image-caption {
+  margin-top: 0.3em;
+}
+
+.image-side-by-side img {
+  flex: 1;
+  width: 100%;
+  margin: 0;
 }
 
 .project-grid {
