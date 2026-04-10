@@ -65,6 +65,7 @@ This is cool - hobby projects are not work. In fact, they should not at all be a
 Then go and do exactly that and get it out there! Then let me know how it went!</p>
 
 </article>
+<button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">↑</button>
     </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
@@ -79,6 +80,25 @@ Then go and do exactly that and get it out there! Then let me know how it went!<
             html.classList.toggle('dark');
             localStorage.setItem('dark-mode', html.classList.contains('dark'));
         });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     </script>
 </body>
 </html>

@@ -52,6 +52,7 @@ An Australian bloke who could barely stay on his feet himself threatened that he
 I will go to Oktoberfest again, but the moral is that I have to be an adult. I knew my limits, and I chose to ignore them. This is not about being risk-averse; I acted like an idiot.</p>
 
 </article>
+<button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">↑</button>
     </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
@@ -66,6 +67,25 @@ I will go to Oktoberfest again, but the moral is that I have to be an adult. I k
             html.classList.toggle('dark');
             localStorage.setItem('dark-mode', html.classList.contains('dark'));
         });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     </script>
 </body>
 </html>

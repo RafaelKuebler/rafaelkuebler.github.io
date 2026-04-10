@@ -57,6 +57,7 @@ In a world in which everything is fleeting and fragile, is it up to us to take c
 New things are exciting - and I hope to experience so many more of them! But it is mystical and reassuring that there are some people who stand the test of time, unwavering, that you can come back to and call home.</p>
 
 </article>
+<button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">↑</button>
     </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
@@ -71,6 +72,25 @@ New things are exciting - and I hope to experience so many more of them! But it 
             html.classList.toggle('dark');
             localStorage.setItem('dark-mode', html.classList.contains('dark'));
         });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     </script>
 </body>
 </html>

@@ -55,6 +55,7 @@ The underlying concept is that most of the time, we are surrounded by noise. It 
 For fun... right?</p>
 
 </article>
+<button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">↑</button>
     </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
@@ -69,6 +70,25 @@ For fun... right?</p>
             html.classList.toggle('dark');
             localStorage.setItem('dark-mode', html.classList.contains('dark'));
         });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     </script>
 </body>
 </html>

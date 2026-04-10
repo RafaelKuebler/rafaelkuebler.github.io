@@ -52,6 +52,7 @@ On the other hand, I admit that I have a small hope my mad ramblings might be at
 <p>So here you go, stranger :) I am truly happy you made your way here! Feel free to stick around and explore a little bit. You might find something interesting!</p>
 
 </article>
+<button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">↑</button>
     </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
@@ -66,6 +67,25 @@ On the other hand, I admit that I have a small hope my mad ramblings might be at
             html.classList.toggle('dark');
             localStorage.setItem('dark-mode', html.classList.contains('dark'));
         });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     </script>
 </body>
 </html>

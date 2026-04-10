@@ -57,6 +57,7 @@ The warm sunny day kind of simply &quot;is&quot;. There probably will be another
 <p>For this year, I want to be more reflective. I want to reconnect with that lost sense of wonder, with my inner child. Seeing the world through the eyes of that little girl on the beach. Forgetting about the worries, and the grocery store's closing times, and all the consequences. Not weighing experiences against one another or hunting for the next great, exciting, refreshingly novel thing. It is the realization that what we have and who we are is enough, and it is plenty. And all around us, at all times, there is something beautiful to wonder about.</p>
 
 </article>
+<button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">↑</button>
     </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
@@ -71,6 +72,25 @@ The warm sunny day kind of simply &quot;is&quot;. There probably will be another
             html.classList.toggle('dark');
             localStorage.setItem('dark-mode', html.classList.contains('dark'));
         });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     </script>
 </body>
 </html>

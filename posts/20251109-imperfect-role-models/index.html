@@ -52,6 +52,7 @@ Or then again, maybe we are supposed to create our own values and purpose. After
 <p>I would like to embark on a short exploration phase where I try to define what my values are. Some kind of personal framework that I can look at and confidently support. A philosophy of care, compassion, integrity, and authenticity. I believe I will find role models who have attempted the same before me along the way!</p>
 
 </article>
+<button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">↑</button>
     </main>
     <script>
         const toggleBtn = document.getElementById('darkModeToggle');
@@ -66,6 +67,25 @@ Or then again, maybe we are supposed to create our own values and purpose. After
             html.classList.toggle('dark');
             localStorage.setItem('dark-mode', html.classList.contains('dark'));
         });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     </script>
 </body>
 </html>
