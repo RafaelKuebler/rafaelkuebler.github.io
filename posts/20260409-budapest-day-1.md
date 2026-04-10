@@ -84,8 +84,8 @@ I cross over [Liberty Bridge](https://maps.app.goo.gl/gs8TPib2WFaDaAXt9) and tak
 
 <div class="image-side-by-side"> 
 
-![Gellert Thermal Bath](/media/budapest/baths.jpeg "TODO")
-![Closed Gellert Bath](/media/budapest/closed_baths.jpeg "TODO")
+![Gellert Thermal Bath](/media/budapest/baths.jpeg)
+![Closed Gellert Bath](/media/budapest/closed_baths.jpeg)
 
 </div>
 
@@ -94,7 +94,7 @@ But it turns out I am in the [Gellért Hill Cave](https://maps.app.goo.gl/pJq4v6
 
 <div class="image-narrow">
 
-![Gellert Hill Cave](/media/budapest/cave.jpeg "TODO")
+![Gellert Hill Cave](/media/budapest/cave.jpeg)
 
 </div>
 
