@@ -48,6 +48,25 @@ export default async function (eleventyConfig) {
     linkify: true,
   }).use(markdownItAnchor);
 
+  // Add custom link rendering - external links open in new tab
+  const defaultLinkOpenRenderer = markdownLibrary.renderer.rules.link_open ||
+    function(tokens, idx, options, _env, self) {
+      return self.renderToken(tokens, idx, options);
+    };
+
+  markdownLibrary.renderer.rules.link_open = function (tokens, idx, options, _env, self) {
+    const token = tokens[idx];
+    const href = token.attrGet("href");
+
+    // External link: doesn't start with / or #
+    if (href && !href.startsWith("/") && !href.startsWith("#")) {
+      token.attrSet("target", "_blank");
+      token.attrSet("rel", "noopener noreferrer");
+    }
+
+    return defaultLinkOpenRenderer(tokens, idx, options, _env, self);
+  };
+
   // Add custom image rendering with caption support
   markdownLibrary.renderer.rules.image = function (tokens, idx) {
     const token = tokens[idx];
