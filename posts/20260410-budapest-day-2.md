@@ -22,7 +22,6 @@ And from there, it is just a stone's throw to the [Central Market Hall](https://
 
 I really want to go to [Buda Castle](https://maps.app.goo.gl/dqSiA4g82ry3JyLu7) today, so I ponder if I should attempt the same walk north along the Danube I already set off on yesterday, before giving up halfway. I decide it is not worth it. Smart! Instead, I pay the 500 HUF in the BudapestGo app and take the tram at [Szent Gellért tér](https://maps.app.goo.gl/zRAtKAizhxWDp9Uh6). It is just a few stops, and it drops me off at [Clark Ádám tér](https://maps.app.goo.gl/KUCGMiFVUKjZPNgP8).
 
-<div class="image-narrow">
 
 ![Tram](/media/budapest2/tram.jpeg "Tram trip along the Danube, Liberty Bridge just outside the window")
 
@@ -81,7 +80,6 @@ The fortress is breathtaking! The architecture is incredible, and the colorful 1
 
 I soak everything up and remember that I need to eat some lunch. The path down is also super nice, and I cross the [Széchenyi Chain Bridge](https://maps.app.goo.gl/KD7jFQmRKkHUXUq78) to the other side of the river.
 
-<div class="image-narrow">
 
 ![Széchenyi Chain Bridge](/media/budapest2/bridge.jpeg "Széchenyi Chain Bridge")
 
@@ -89,7 +87,6 @@ I soak everything up and remember that I need to eat some lunch. The path down i
 
 I try to find a place that is as local as possible to catch up on the missed opportunities until now, and find the cute little [Granny’s Lángos](https://maps.app.goo.gl/ueKr58hWMzbxqoFL7) close to the city center. I order a Lángos and they gift me a deep-fried ball covered in chocolate as dessert. Sure, give me all the carbs. I struggle to finish it all, but I make my ancestors proud.
 
-<div class="image-narrow">
 
 ![Langos](/media/budapest2/langos.jpeg "That's at least 800 cal right there")
 
@@ -98,7 +95,6 @@ I try to find a place that is as local as possible to catch up on the missed opp
 I continue on to [St. Stephen's Basilica](https://maps.app.goo.gl/mAD2ekPu9Faq4r8B9). This part of town is bustling with tourist as well. Two employees are checking the tickets of everyone who tries to enter. I scan a QR code to see on the webpage that all tickets are sold out and that I should "head to the ticket office nearby". I follow the signs "to the ticket office" that lead in a circle around the basilica. When I ask some people for help, they point me to one corner that is significantly away from any place the signs were pointing to. The ticket office is closed, of course. Takeaway from the trip: don't bother following the signs.
 I sit in the sun for some minutes on the front stairs, and smile to look good on the pictures of the other tourists.
 
-<div class="image-narrow">
 
 ![Basilica](/media/budapest2/basilica.jpeg "St. Stephen's Basilica (being renovated, of course)")
 
@@ -107,7 +103,6 @@ I sit in the sun for some minutes on the front stairs, and smile to look good on
 The parliament building is one of the must-sees, so that is my next stop!
 I pass by [Liberty Square](https://maps.app.goo.gl/rdtpwSiGtfP7aY548) and spend a bit of time reading through the text and objects people left at the [Memorial for Victims of the German Occupation](https://maps.app.goo.gl/TtC9Bw9CcBQiZQpi6). I will not comment on the political situation or Viktor Orbán, just drop the picture of the concerned citizens' letter underneath. The [Soviet War Memorial](https://maps.app.goo.gl/bKcezgmajxs4juMF8) at the other side of the park is super impressive. I recommend reading up on how Hungary was on the losing side of both World Wars, was occupied by the Soviet Red Army and subsequently taken over by the Hungarian Communist Party. Multiple revolutions and the rise and fall from glory has for sure influenced its architecture, sentiment toward European politics, and national identity. During my visit, there were Hungarian flags *everywhere*.
 
-<div class="image-narrow">
 
 ![Liberty Square](/media/budapest2/liberty.jpeg "Memorial for Victims of the German Occupation")
 
@@ -140,7 +135,6 @@ I head all the way back to the dock and hop on my boat after getting my ticket c
 
 Why would they name the ship in the same way? Or at least change the name? At least it is not the same ship 😖 Well, whatever.
 
-<div class="image-narrow">
 
 ![Boat](/media/budapest2/boat.jpeg "Dock 10, my boat turned out to be the one in the back")
 
@@ -156,7 +150,6 @@ River cruise: *highly recommended!* If you can, get a not-so-touristy one, and b
 
 </div>
 
-<div class="image-narrow">
 
 ![Boat](/media/budapest2/boat5.jpeg "Hungarian Parliament Building, better angle this time")
 

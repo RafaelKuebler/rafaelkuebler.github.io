@@ -62,6 +62,7 @@ export default async function (eleventyConfig) {
     if (href && !href.startsWith("/") && !href.startsWith("#")) {
       token.attrSet("target", "_blank");
       token.attrSet("rel", "noopener noreferrer");
+      token.attrSet("class", "external-link");
     }
 
     return defaultLinkOpenRenderer(tokens, idx, options, _env, self);
@@ -75,7 +76,9 @@ export default async function (eleventyConfig) {
     const title = token.attrGet("title");
 
     let html = '<div class="image-container">';
+    html += `<a href="${src}" target="_blank" rel="noopener" class="image-link">`;
     html += `<img src="${src}" alt="${alt}" />`;
+    html += '</a>';
     if (title) {
       html += `<div class="image-caption">${title}</div>`;
     }

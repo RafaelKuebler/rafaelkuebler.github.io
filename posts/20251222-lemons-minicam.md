@@ -26,7 +26,6 @@ Some months ago, the KODAK Charmera, a digital keychain camera with built-in ret
 
 I was delighted when I found a (in hindsight quite shady) website that claimed that it still had some in stock. I ordered one for 30€, and it arrived within a month. Upon unpacking, this was what I got:
 
-<div class="image-narrow">
 
 ![Scam Minicam](/media/minicam/minicam.jpeg "'KODAK Charmera' I got.")
 

@@ -30,11 +30,7 @@ I get controlled immediately upon entering the metro, of course, but at least ge
 
 Onwards to check out the hostel! I get out at [Rákóczi tér](https://maps.app.goo.gl/swni2tkMS4o42tyF7) and take my first picture of the trip.
 
-<div class="image-narrow">
-
 ![Rákóczi tér](/media/budapest/rakocsi_ter.jpeg "Rákóczi tér, named after Francis II Rákóczi, a Hungarian nobleman and leader of the Rákóczi's War of Independence against the Habsburgs in 1703–1711")
-
-</div>
 
 I booked 2 nights at the [Mustache Hostel](https://maps.app.goo.gl/y5QVWCMSVM4MfYhu8) quite centrally in Pest, but after arriving at 9am and checking in, I am told I cannot go into my room until 2pm. But they can watch over my luggage! So I do that and set off with my backpack.
 
@@ -43,19 +39,11 @@ I booked 2 nights at the [Mustache Hostel](https://maps.app.goo.gl/y5QVWCMSVM4Mf
 I have to admit that I did not do much research before arriving 🙈
 I looked up some blog posts and YouTube videos but ultimately have no idea what was where in the city. So I wander around aimlessly and discover that shops and cafés don't open until around 10am, including the [Hungarian National Museum](https://maps.app.goo.gl/rHMYEp6xz2RveK9m6) that I randomly find nearby. At least the gardens are really cool!
 
-<div class="image-narrow">
-
 ![Hungarian National Museum](/media/budapest/national_museum.jpeg "Hungarian National Museum, still closed")
-
-</div>
 
 [The California Coffee Company](https://maps.app.goo.gl/BxcrApqgArUpGZPe9) is open (I know, very authentic and local), and I sit down for a cappuccino and a blueberry muffin. The muffin does not have whole blueberries, but some kind of jam in it... 🙄 Ok...
 
-<div class="image-narrow">
-
 ![California Coffee Company Breakfast](/media/budapest/california_bean.jpeg "Breakfast of champions: Blueberry jam-filled muffin and coffee")
-
-</div>
 
 A girl is studying on a nearby desk, so I ask her if she speaks English, and if she is from here.
 She is called Lilly and is an economy student writing her master's thesis. Lilly gives me some recommendations of both tourist places that are must-sees, and her local highlights. Awesome!
@@ -91,11 +79,7 @@ I cross over [Liberty Bridge](https://maps.app.goo.gl/gs8TPib2WFaDaAXt9) and tak
 I am curious about some kind of large metal entrance. So I head inside and pay 1,400 HUF in cash, with two 1,000 HUF bills. I get back a literal handful of coins (7 or 8 pretty large ones). 600 HUF, or 1.50€ (quick maths). Great 😒
 But it turns out I am in the [Gellért Hill Cave](https://maps.app.goo.gl/pJq4v6ySXc3a1zUd7), a historic chapel and monastery in the mountain!
 
-<div class="image-narrow">
-
 ![Gellert Hill Cave](/media/budapest/cave.jpeg)
-
-</div>
 
 While the cave itself is fascinating, I think religious folks will enjoy the experience more than I did. So I give back my audio guide and hike up the hill. The view of the Danube and the south of Buda and Pest is great! Budapest was officially created in 1873, by the unification of three cities: Buda and Óbuda (on the west bank of the Danube, hilly and historic) and Pest (on the east bank, more commercial).
 
@@ -115,37 +99,21 @@ I wonder if walking to the Buda Castle would be too far, then I start walking an
 And it probably is not that far. I did just not notice how tired I was from the trip, and my legs are shaking from the small hike, too little food, and horrible sleep on the bus.
 So I cross back to the Pest-side of the Danube, over the [Elisabeth Bridge](https://maps.app.goo.gl/mMDVwNrYVCKk18QPA).
 
-<div class="image-narrow">
-
 ![Waypoint Sign](/media/budapest/waypoint.jpeg "Waypoint sign, with some of the already mentioned locations.")
-
-</div>
 
 The weather is perfect! Almost 20°C and super sunny! I take a small break to phone my family and friends, and without even noticing I arrive at the [Time Out Market](https://maps.app.goo.gl/yMtiqGWAVdsZNRtR6). There are too many options, but I decide to treat myself an awesome "Umami Burger" with fries and truffle mayo. Yum! 😋
 
-<div class="image-narrow">
-
 ![Time Out Burger](/media/budapest/burger.jpeg "Time Out Market's Umami burger 🍔")
-
-</div>
 
 After this, the food coma hits, and I am a bit aimless. It is 4pm, and I have only seen totally random things, the places I actually wanted to see were being renovated, and my trajectory on the map is just an elongated, wonky ellipse that almost leads back to the hostel. So why not head back to the hostel!? 😅 When I arrive I crash, and I have a much needed 2 hour "nap" in my bunk bed. Got the bottom one, praise all the gods!
 
-<div class="image-narrow">
-
 ![Mustache Hostel bunk beds](/media/budapest/hostel.jpeg "Bunk beds at the Mustache Hostel. The bottom one, number 7, is mine.")
-
-</div>
 
 When I wake up again, I am destroyed. I notice that I forgot my flipflops. Alrighty. But life is short! So I shower without and go party 😂
 [Szimpla Kert](https://maps.app.goo.gl/39nxVqHudAnjZ2ut9), aka the most well-known ruin bar, is just a few blocks away! And I loved the place! I was so early I did not even have to wait in line!
 It is a super cool location to hang out with friends and drink a few beers... if only I had some friends with me 🤷‍♂️ Instead, I follow the music, which takes me to a surprisingly small room with surprisingly little people. Seems the techno raver culture is not really a thing here.
 
-<div class="image-narrow">
-
 ![Ruin Bar](/media/budapest/ruin_bar_1.jpeg "Szimpla Kert ruin bar. Pretty cool vibes!")
-
-</div>
 
 <div class="image-side-by-side"> 
 
@@ -161,14 +129,10 @@ When I leave, the queue to go in has grown massive, but I overhear you can semi-
 
 However, just three blocks away, I somehow also manage to get into the [Instant-Fogas Complex](https://maps.app.goo.gl/BEqJKZcmyzsUw1fdA) without any queue! 🥳 People keep streaming in constantly. And of course, the place is huge. Multiple rooms and floors playing different types of music. Even a live funk band that I miss by just a few seconds! The band is quickly replaced by conventional EDM and party music (Taylor Swift, Bad Bunny, and David Guetta). Sad.
 
-<div class="image-narrow">
-
 ![Instant-Fogas Complex](/media/budapest/disco.jpeg "The bursting-full inner courtyard of the Instant-Fogas Complex at 2am.")
-
-</div>
 
 I find my little techno room all the way in the back again and bounce to the music for some hours, fueled by 3 very weak Cuba Libres.
 
-When I leave at 3am, the queue outside is massive again. After a few steps, I notice I am starving, and the [Greek Taverna Melissa Bisztro](https://maps.app.goo.gl/LrQUy2RDJG59ZHkP8) looks like the most invigitting restaurant in the world. So I get an awesome Gyros Pita and eat it during the walk back to the hostel.
+When I leave at 3am, the queue outside is massive again. After a few steps, I notice I am starving, and the [Greek Taverna Melissa Bisztro](https://maps.app.goo.gl/LrQUy2RDJG59ZHkP8) looks like the most inviting restaurant in the world. So I get an awesome Gyros Pita and eat it during the walk back to the hostel.
 
 As I arrive, I go to sleep. And that, folks, was day one!
