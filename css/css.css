@@ -155,12 +155,18 @@ a:hover,
     color: var(--link-hover-color);
 }
 
+a.external-link {
+    display: inline-flex;
+    align-items: baseline;
+}
+
 a.external-link::after {
     content: '';
     display: inline-block;
     width: 0.85em;
     height: 0.85em;
-    margin-left: 0.2em;
+    margin-left: 0.25em;
+    flex-shrink: 0;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%230077cc"><path d="M9 2L9 3.5L12.5 3.5L6 10L7 11L13.5 4.5L13.5 8L15 8L15 2Z"/><path d="M4 2C2.9 2 2 2.9 2 4L2 12C2 13.1 2.9 14 4 14L12 14C13.1 14 14 13.1 14 12L14 9L12.5 9L12.5 12C12.5 12.3 12.3 12.5 12 12.5L4 12.5C3.7 12.5 3.5 12.3 3.5 12L3.5 4C3.5 3.7 3.7 3.5 4 3.5L7 3.5L7 2Z"/></svg>');
     background-size: contain;
     background-repeat: no-repeat;
@@ -324,6 +330,17 @@ h1 {
   .image-side-by-side img {
     max-width: 100%;
   }
+  .image-link {
+    cursor: default;
+    pointer-events: none;
+  }
+  .image-link::after {
+    display: none;
+  }
+  .gallery-grid a {
+    cursor: default;
+    pointer-events: none;
+  }
 }
 
 .gallery summary {
@@ -352,7 +369,7 @@ h1 {
 .image-side-by-side {
   display: flex;
   gap: 1rem;
-  margin: 2rem auto;
+  margin: 1em auto 0.3em;
   align-items: center;
 }
 
