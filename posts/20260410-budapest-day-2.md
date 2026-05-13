@@ -6,7 +6,7 @@ tags:
   - post
 ---
 
-I sleep in on Friday, the 3rd of April, until around 11:30am. It is the best decision I have made in a really long time. I scroll on the phone and think about how I can get more actual sightseeing out of today.
+I sleep in on Saturday, the 4rd of April, until around 11:30am. It is the best decision I have made in a really long time. I scroll on the phone and think about how I can get more actual sightseeing out of today.
 For one, I have not yet seen the main places Lilly and everyone else recommended. You know, the touristy stuff. Also, I ate a burger and a blueberry muffin the day before, which I could have done in any other city, really.
 
 So I set off and head to a café with actually great reviews, the [Butter Brothers Bakery & Bistro](https://maps.app.goo.gl/92dojpNENN1gqvuN6). And oh-my-god, I have never enjoyed a cinnamon-roll-without-cinnammon-but-with-chocolate so much before. As I Googled after, it is a Hungarian Chocolate Roll, or *Kakaós Csiga* in Hungarian, which translates to "Cocoa Snail". The chocolate was not creamy as usual, but kind of caramelized - it was heaven! 🙏
