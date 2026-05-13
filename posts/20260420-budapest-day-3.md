@@ -6,7 +6,7 @@ tags:
   - post
 ---
 
-On Saturday, the 4th of April, I wake up at 9:30. Last day!
+On Sunday, the 5th of April, I wake up at 9:30. Last day!
 I shower and pack, thinking a lot about what I will be leaving behind in the hostel for later pickup, and what I should be carrying with me today in my backpack.
 I specifically did bring my swimming trunks, since Budapest's baths are supposed to be great!
 
