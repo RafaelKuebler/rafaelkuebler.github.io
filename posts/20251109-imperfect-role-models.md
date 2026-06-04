@@ -1,6 +1,6 @@
 ---
 title: Imperfect Role Models
-date: 2025-10-26
+date: 2025-11-09
 layout: post.njk
 tags:
   - post

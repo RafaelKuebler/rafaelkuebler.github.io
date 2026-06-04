@@ -4,13 +4,12 @@ layout: base.njk
 <header>
     <h1>{{ homepage.title or site.title }}</h1>
 
-    {% set subtitle = homepage.subtitle%}
+    {% set subtitle = homepage.subtitle %}
     {% if subtitle %}
         <p>{{ subtitle }}</p>
     {% endif %}
 </header>
-<main>
-    <h2>Posts</h2>
-    {% set entries = homepage.menu %}
-    {% include "menu.njk" %}
-</main>
+
+<h2>Posts</h2>
+{% set entries = homepage.menu %}
+{% include "menu.njk" %}
