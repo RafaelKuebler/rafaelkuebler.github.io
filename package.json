@@ -8,7 +8,7 @@
   "type": "module",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "~3.1.5",
+    "@11ty/eleventy": "~3.1.6",
     "@11ty/eleventy-plugin-rss": "~3.0.0",
     "luxon": "~3.7.2",
     "eleventy-plugin-reading-time": "~0.0.1",
