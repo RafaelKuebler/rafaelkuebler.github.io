@@ -35,7 +35,7 @@ p, ul, ol {
     color: #666;
 }
 
-img, blockquote, pre, table {
+img, pre, table {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     border-radius: 8px;
 }
@@ -104,9 +104,10 @@ p:has(.image-container) {
 }
 
 blockquote {
-    background: linear-gradient(to right, #f9f9f9, #f2f2f2);
-    border-left: 5px solid #0077cc;
-    padding: 1.2rem;
+    border-left: 1px solid #ccc;
+    padding-left: 1.4rem;
+    margin: 1.4em 0 1.4em 1em;
+    color: #555;
     font-style: italic;
 }
 
@@ -185,6 +186,10 @@ html.dark {
   color: #f1f1f1;
 }
 
+html.dark hr {
+  background-color: #8fbccc;
+}
+
 html.dark a {
   border-bottom-color: rgba(144, 202, 249, 0.3);
 }
@@ -194,8 +199,8 @@ html.dark a:hover {
 }
 
 html.dark blockquote {
-  background: linear-gradient(to right, #1e1e1e, #2c2c2c);
-  border-left-color: #90caf9;
+  border-left-color: #3a3a3a;
+  color: #bbb;
 }
 
 html.dark pre,
@@ -255,13 +260,18 @@ html.dark .site-nav {
 main {
     max-width: 80ch;
     margin: 0 auto;
+    position: relative;
     padding: 0.2rem 2em 0;
 }
 
 hr {
-    margin: 2em -2em;
     border: none;
-    border-top: 1px solid var(--border-color, #ddd);
+    height: 12px;
+    width: 8rem;
+    margin: 2.5em auto;
+    background-color: #6a9cb0;
+    -webkit-mask: no-repeat center/contain url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12'><path d='M2 6 Q 12 1, 22 6 T 42 6 T 62 6 T 82 6 T 102 6 T 118 6' fill='none' stroke='black' stroke-width='1.4' stroke-linecap='round'/></svg>");
+            mask: no-repeat center/contain url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12'><path d='M2 6 Q 12 1, 22 6 T 42 6 T 62 6 T 82 6 T 102 6 T 118 6' fill='none' stroke='black' stroke-width='1.4' stroke-linecap='round'/></svg>");
 }
 
 .social-links {
@@ -295,6 +305,74 @@ hr {
 
 h1 {
     margin-top: 0.5em;
+}
+
+aside.sticky-note {
+  float: right;
+  clear: right;
+  width: 14em;
+  max-width: 45%;
+  margin: 0.8em -2em 1.6em 1.5em;
+  padding: 1.6em 1.2em 1.2em;
+  background:
+    radial-gradient(ellipse at 25% 20%,
+      rgba(255,255,255,0.28) 0%,
+      rgba(255,255,255,0) 55%),
+    #fff7b1;
+  color: #3a3320;
+  font-size: 0.95em;
+  line-height: 1.5;
+  border-radius: 0;
+  transform: rotate(1.2deg);
+  font-family: "Caveat", "Bradley Hand", "Segoe Print", cursive;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+aside.sticky-note::before {
+  content: "";
+  position: absolute;
+  top: -0.4em;
+  left: 50%;
+  width: 4em;
+  height: 1em;
+  margin-left: -2em;
+  background: rgba(220, 210, 150, 0.7);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+  transform: rotate(-2deg);
+}
+
+aside.sticky-note:nth-of-type(even) {
+  transform: rotate(-1.5deg);
+  background:
+    radial-gradient(ellipse at 25% 20%,
+      rgba(255,255,255,0.25) 0%,
+      rgba(255,255,255,0) 55%),
+    #b8e6c1;
+}
+
+aside.sticky-note:nth-of-type(even)::before {
+  background: rgba(160, 200, 170, 0.7);
+  transform: rotate(3deg);
+}
+
+aside.sticky-note p {
+  margin: 0 0 0.5em;
+}
+
+aside.sticky-note p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  aside.sticky-note {
+    float: none;
+    clear: both;
+    width: 14em;
+    max-width: 85%;
+    margin: 1.5em auto;
+    display: block;
+  }
 }
 
 @media (max-width: 600px) {
@@ -476,4 +554,192 @@ html.dark .scroll-to-top {
 
 html.dark .scroll-to-top:hover {
     background-color: #1565c0;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+.dark-mode-toggle:hover {
+    border-color: var(--link-color);
+}
+html.dark .dark-mode-toggle {
+    border-color: #444;
+}
+html.dark .dark-mode-toggle:hover {
+    border-color: #1976d2;
+}
+
+/* Reading time on index */
+.post-reading-time {
+    color: #999;
+    font-size: 0.9em;
+}
+html.dark .post-reading-time {
+    color: #777;
+}
+
+/* Site footer */
+.site-footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+}
+.site-footer p {
+    margin: 0;
+}
+.site-footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+html.dark .site-footer {
+    border-top-color: #333;
+    color: #999;
+}
+
+/* Prev/next post nav */
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem 0 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-color);
+}
+.post-nav-prev,
+.post-nav-next {
+    display: flex;
+    flex-direction: column;
+    max-width: 48%;
+}
+.post-nav-next {
+    text-align: right;
+    margin-left: auto;
+}
+.post-nav-label {
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 0.2rem;
+}
+html.dark .post-nav {
+    border-top-color: #333;
+}
+html.dark .post-nav-label {
+    color: #999;
+}
+
+/* Social link SVG icons */
+.social-link svg {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+/* Stickies pile on the homepage — reuses .sticky-note look */
+.stickies {
+    --sticky-w: 9.5rem;
+    --sticky-h: 9.5rem;
+    --sticky-peek: calc(var(--sticky-h) - 1.2rem); /* overlap between cards */
+    --sticky-gutter: 1rem;
+    --sticky-top-gap: 1.5rem; /* room for pushpin above first sticky */
+    position: absolute;
+    top: 0;
+    left: calc(100% + 0.5rem);
+    width: calc(var(--sticky-w) + 2 * var(--sticky-gutter));
+    height: calc(var(--sticky-top-gap) + var(--sticky-h) + 5 * var(--sticky-peek));
+}
+aside.home-sticky {
+    /* override .sticky-note float/margins for absolute stacking */
+    box-sizing: border-box;
+    float: none;
+    clear: none;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    width: var(--sticky-w);
+    max-width: none;
+    height: var(--sticky-h);
+    padding: 1.4em 0.7em 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* stack downward; newest (i=0) at top, older ones stacked below with small gap */
+    left: var(--sticky-gutter);
+    top: calc(var(--sticky-top-gap) + var(--i) * var(--sticky-peek));
+}
+.stickies {
+    /* Solid through the top area (padding + first sticky), then fade. */
+    -webkit-mask-image: linear-gradient(to bottom, #000 19%, transparent 100%);
+            mask-image: linear-gradient(to bottom, #000 19%, transparent 100%);
+}
+/* Highlight the newest sticky (i=0) as the current one */
+.home-sticky:first-of-type {
+    transform: scale(1.08) rotate(-1.5deg);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+.home-sticky:first-of-type p {
+    font-weight: 700;
+}
+.home-sticky p {
+    font-size: 1em;
+    line-height: 1.2;
+    margin: 0 0 0.4em;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    color: rgba(58, 51, 32, 1);
+}
+.home-sticky time {
+    font-size: 0.75rem;
+    color: rgba(58, 51, 32, 1);
+}
+/* Narrow viewport: horizontal row above the header.
+   Trigger early enough that absolute stickies (main + 2*(1.5rem + 11rem))
+   never get clipped by the viewport edge. */
+@media (max-width: 1400px) {
+    .stickies {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0 0 1.5rem;
+        padding-top: 0.9rem;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    aside.home-sticky {
+        position: static;
+        top: auto;
+        flex: 0 0 auto;
+    }
+    aside.home-sticky + aside.home-sticky {
+        margin-left: -0.75rem;
+    }
+    /* Horizontal fade toward the older end in row layout */
+    .stickies {
+        -webkit-mask-image: linear-gradient(to right, #000 40%, transparent 100%);
+                mask-image: linear-gradient(to right, #000 40%, transparent 100%);
+    }
 }
