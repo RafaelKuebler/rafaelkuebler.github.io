@@ -42,6 +42,21 @@ export default async function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat(format);
   });
 
+  eleventyConfig.addFilter("hoursAgo", (value) => {
+    const then = typeof value === "string" ? DateTime.fromISO(value) : DateTime.fromJSDate(value);
+    return -then.diffNow("hours").hours;
+  });
+
+  eleventyConfig.addFilter("relativeTime", (value) => {
+    const then = typeof value === "string" ? DateTime.fromISO(value) : DateTime.fromJSDate(value);
+    const diff = then.diffNow().shiftTo("years", "months", "days", "hours", "minutes").toObject();
+    const pick = (["years", "months", "days", "hours", "minutes"]).find(u => Math.abs(diff[u]) >= 1);
+    if (!pick) return "Now";
+    const n = Math.floor(Math.abs(diff[pick]));
+    const unit = n === 1 ? pick.slice(0, -1) : pick;
+    return `${n} ${unit} ago`;
+  });
+
   // Configure markdown-it
   const markdownLibrary = markdownIt({
     html: true,

@@ -1,6 +1,27 @@
 ---
 layout: base.njk
 ---
+{% if stickies and stickies.length %}
+<section class="stickies" aria-label="What I'm doing right now">
+    {% set sorted = stickies | sort(attribute="datetime", reverse=true) %}
+    {% set stale = (sorted[0].datetime | hoursAgo) > 24 %}
+    {% if stale %}
+    <aside class="sticky-note home-sticky" style="--i: 0; z-index: 100;">
+        <p>🤷‍♂️</p>
+        <time>Now</time>
+    </aside>
+    {% endif %}
+    {% set shift = 1 if stale else 0 %}
+    {% set limit = 5 if stale else 6 %}
+    {% for s in sorted.slice(0, limit) %}
+    <aside class="sticky-note home-sticky" style="--i: {{ loop.index0 + shift }}; z-index: {{ 100 - loop.index0 - shift }};">
+        <p>{{ s.text }}</p>
+        <time datetime="{{ s.datetime }}">{% if loop.index0 == 0 and not stale %}Now{% else %}{{ s.datetime | relativeTime }}{% endif %}</time>
+    </aside>
+    {% endfor %}
+</section>
+{% endif %}
+
 <header>
     <h1>{{ homepage.title or site.title }}</h1>
 
