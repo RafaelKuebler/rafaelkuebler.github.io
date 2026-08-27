@@ -185,6 +185,10 @@ html.dark {
   color: #f1f1f1;
 }
 
+html.dark hr {
+  background-color: #8fbccc;
+}
+
 html.dark a {
   border-bottom-color: rgba(144, 202, 249, 0.3);
 }
@@ -259,9 +263,13 @@ main {
 }
 
 hr {
-    margin: 2em -2em;
     border: none;
-    border-top: 1px solid var(--border-color, #ddd);
+    height: 12px;
+    width: 8rem;
+    margin: 2.5em auto;
+    background-color: #6a9cb0;
+    -webkit-mask: no-repeat center/contain url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12'><path d='M2 6 Q 12 1, 22 6 T 42 6 T 62 6 T 82 6 T 102 6 T 118 6' fill='none' stroke='black' stroke-width='1.4' stroke-linecap='round'/></svg>");
+            mask: no-repeat center/contain url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12'><path d='M2 6 Q 12 1, 22 6 T 42 6 T 62 6 T 82 6 T 102 6 T 118 6' fill='none' stroke='black' stroke-width='1.4' stroke-linecap='round'/></svg>");
 }
 
 .social-links {
@@ -295,6 +303,87 @@ hr {
 
 h1 {
     margin-top: 0.5em;
+}
+
+aside.sticky-note {
+  float: right;
+  clear: right;
+  width: 14em;
+  max-width: 45%;
+  margin: 0.8em -2em 1.6em 1.5em;
+  padding: 1.6em 1.2em 1.2em;
+  background:
+    radial-gradient(ellipse at 25% 20%,
+      rgba(255,255,255,0.28) 0%,
+      rgba(255,255,255,0) 55%),
+    #fff7b1;
+  color: #3a3320;
+  font-size: 0.95em;
+  line-height: 1.5;
+  border-radius: 0;
+  box-shadow:
+    0 1px 1px rgba(0,0,0,0.10),
+    4px 8px 10px rgba(0,0,0,0.22),
+    10px 20px 28px rgba(0,0,0,0.14);
+  transform: rotate(1.2deg);
+  font-family: "Caveat", "Bradley Hand", "Segoe Print", cursive;
+  position: relative;
+}
+
+aside.sticky-note::before {
+  content: "";
+  position: absolute;
+  top: -0.4em;
+  left: 50%;
+  width: 4em;
+  height: 1em;
+  margin-left: -2em;
+  background: rgba(220, 210, 150, 0.7);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+  transform: rotate(-2deg);
+}
+
+aside.sticky-note:nth-of-type(even) {
+  transform: rotate(-1.5deg);
+  background:
+    radial-gradient(ellipse at 25% 20%,
+      rgba(255,255,255,0.25) 0%,
+      rgba(255,255,255,0) 55%),
+    #b8e6c1;
+}
+
+html.dark aside.sticky-note {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.08),
+    -3px -3px 10px rgba(255,255,255,0.10),
+    4px 10px 18px rgba(255,255,255,0.12),
+    10px 22px 34px rgba(255,255,255,0.06);
+}
+
+
+
+aside.sticky-note:nth-of-type(even)::before {
+  background: rgba(160, 200, 170, 0.7);
+  transform: rotate(3deg);
+}
+
+aside.sticky-note p {
+  margin: 0 0 0.5em;
+}
+
+aside.sticky-note p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  aside.sticky-note {
+    float: none;
+    clear: both;
+    width: 14em;
+    max-width: 85%;
+    margin: 1.5em auto;
+    display: block;
+  }
 }
 
 @media (max-width: 600px) {
@@ -476,4 +565,93 @@ html.dark .scroll-to-top {
 
 html.dark .scroll-to-top:hover {
     background-color: #1565c0;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+.dark-mode-toggle:hover {
+    border-color: var(--link-color);
+}
+html.dark .dark-mode-toggle {
+    border-color: #444;
+}
+html.dark .dark-mode-toggle:hover {
+    border-color: #1976d2;
+}
+
+/* Reading time on index */
+.post-reading-time {
+    color: #999;
+    font-size: 0.9em;
+}
+html.dark .post-reading-time {
+    color: #777;
+}
+
+/* Site footer */
+.site-footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+}
+.site-footer p {
+    margin: 0;
+}
+.site-footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+html.dark .site-footer {
+    border-top-color: #333;
+    color: #999;
+}
+
+/* Prev/next post nav */
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 3rem 0 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-color);
+}
+.post-nav-prev,
+.post-nav-next {
+    display: flex;
+    flex-direction: column;
+    max-width: 48%;
+}
+.post-nav-next {
+    text-align: right;
+    margin-left: auto;
+}
+.post-nav-label {
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 0.2rem;
+}
+html.dark .post-nav {
+    border-top-color: #333;
+}
+html.dark .post-nav-label {
+    color: #999;
 }

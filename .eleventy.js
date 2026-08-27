@@ -2,6 +2,7 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import { DateTime } from "luxon";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
+import markdownItContainer from "markdown-it-container";
 import readingTime from "eleventy-plugin-reading-time";
 
 export default async function (eleventyConfig) {
@@ -46,7 +47,13 @@ export default async function (eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true,
-  }).use(markdownItAnchor);
+  }).use(markdownItAnchor).use(markdownItContainer, "aside", {
+    render(tokens, idx) {
+      return tokens[idx].nesting === 1
+        ? '<aside class="sticky-note">\n'
+        : '</aside>\n';
+    },
+  });
 
   // Add custom link rendering - external links open in new tab
   const defaultLinkOpenRenderer = markdownLibrary.renderer.rules.link_open ||

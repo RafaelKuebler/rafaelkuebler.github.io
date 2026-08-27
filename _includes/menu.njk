@@ -12,8 +12,9 @@
                     {% set currentYear = postYear %}
                 {% endif %}
                 <li class="post-list-item">
-                    <time datetime="{{ post.date }}" class="post-date">{{ post.date | date }}</time>
+                    <time datetime="{{ post.date | date('yyyy-MM-dd') }}" class="post-date">{{ post.date | date('LLL d') }}</time>
                     <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+                    <span class="post-reading-time">({{ post.templateContent | readingTime }})</span>
                 </li>
             {% endfor %}
             {% if currentYear != "" %}</ul>{% endif %}

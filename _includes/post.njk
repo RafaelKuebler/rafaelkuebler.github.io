@@ -3,13 +3,29 @@ layout: base.njk
 ---
 <article>
   <p class="post-meta">
-    <time datetime="{{ page.date }}">{{ page.date | date }}</time>
+    <time datetime="{{ page.date | date('yyyy-MM-dd') }}">{{ page.date | date }}</time>
     &bull; About {{ content | readingTime }} reading time
   </p>
   <h1>{{ title }}</h1>
-  {{ content | safe  }}
-  <p class="project-back">
-    <a href="/">← Home</a>
-  </p>
+  {{ content | safe }}
+
+  {% set prevPost = collections.post | getPreviousCollectionItem(page) %}
+  {% set nextPost = collections.post | getNextCollectionItem(page) %}
+  {% if prevPost or nextPost %}
+  <nav class="post-nav" aria-label="Post navigation">
+    <div class="post-nav-prev">
+      {% if prevPost %}
+        <span class="post-nav-label">← Previous</span>
+        <a href="{{ prevPost.url | url }}">{{ prevPost.data.title }}</a>
+      {% endif %}
+    </div>
+    <div class="post-nav-next">
+      {% if nextPost %}
+        <span class="post-nav-label">Next →</span>
+        <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
 </article>
-<button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">↑</button>
+<button id="scrollToTop" type="button" class="scroll-to-top" aria-label="Scroll to top">↑</button>
