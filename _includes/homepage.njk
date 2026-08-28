@@ -2,24 +2,51 @@
 layout: base.njk
 ---
 {% if stickies and stickies.length %}
-<section class="stickies" aria-label="What I'm doing right now">
-    {% set sorted = stickies | sort(attribute="datetime", reverse=true) %}
-    {% set stale = (sorted[0].datetime | hoursAgo) > 24 %}
-    {% if stale %}
-    <aside class="sticky-note home-sticky" style="--i: 0; z-index: 100;">
-        <p>🤷‍♂️</p>
-        <time>Now</time>
-    </aside>
-    {% endif %}
-    {% set shift = 1 if stale else 0 %}
-    {% set limit = 5 if stale else 6 %}
-    {% for s in sorted.slice(0, limit) %}
-    <aside class="sticky-note home-sticky" style="--i: {{ loop.index0 + shift }}; z-index: {{ 100 - loop.index0 - shift }};">
-        <p>{{ s.text }}</p>
-        <time datetime="{{ s.datetime }}">{% if loop.index0 == 0 and not stale %}Now{% else %}{{ s.datetime | relativeTime }}{% endif %}</time>
-    </aside>
-    {% endfor %}
-</section>
+<section class="stickies" aria-label="What I'm doing right now" hidden></section>
+<script type="application/json" id="stickies-data">{{ stickies | dump | safe }}</script>
+<script>
+(function () {
+  const data = JSON.parse(document.getElementById('stickies-data').textContent);
+  const section = document.querySelector('.stickies');
+  const now = Date.now();
+  const past = data
+    .filter(s => new Date(s.datetime).getTime() <= now)
+    .sort((a, b) => b.datetime.localeCompare(a.datetime));
+  if (!past.length) return;
+  const units = [
+    ['years', 31536000000], ['months', 2592000000],
+    ['days', 86400000], ['hours', 3600000], ['minutes', 60000],
+  ];
+  function relativeTime(iso) {
+    const diff = Math.abs(now - new Date(iso).getTime());
+    for (const [u, ms] of units) {
+      const n = Math.floor(diff / ms);
+      if (n >= 1) return `${n} ${n === 1 ? u.slice(0, -1) : u} ago`;
+    }
+    return 'Now';
+  }
+  const stale = (now - new Date(past[0].datetime).getTime()) / 3600000 > 24;
+  const items = [];
+  if (stale) items.push({ text: '🤷\u200d♂️', label: 'Now' });
+  const limit = stale ? 5 : 6;
+  past.slice(0, limit).forEach((s, i) => {
+    items.push({
+      text: s.text,
+      datetime: s.datetime,
+      label: (i === 0 && !stale) ? 'Now' : relativeTime(s.datetime),
+    });
+  });
+  section.innerHTML = items.map((s, i) => {
+    const time = s.datetime
+      ? `<time datetime="${s.datetime}">${s.label}</time>`
+      : `<time>${s.label}</time>`;
+    const p = document.createElement('p');
+    p.textContent = s.text;
+    return `<aside class="sticky-note home-sticky" style="--i: ${i}; z-index: ${100 - i};">${p.outerHTML}${time}</aside>`;
+  }).join('');
+  section.hidden = false;
+})();
+</script>
 {% endif %}
 
 <header>
