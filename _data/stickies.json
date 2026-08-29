@@ -1,5 +1,9 @@
 [
   {
+    "datetime": "2026-09-04T19:00",
+    "text": "Working out 🏋️‍♀️"
+  },
+  {
     "datetime": "2026-09-03T20:00",
     "text": "70mm Odyssey cinema 🤩🏛️"
   },
@@ -22,6 +26,10 @@
   {
     "datetime": "2026-08-29T13:00",
     "text": "Trip to the hardware store 🔨"
+  },
+  {
+    "datetime": "2026-08-29T11:00",
+    "text": "Coffee and cake ☕️"
   },
   {
     "datetime": "2026-08-28T18:00",
@@ -54,9 +62,5 @@
   {
     "datetime": "2026-08-18T18:00",
     "text": "Museum Meetup 🎨"
-  },
-  {
-    "datetime": "2026-08-17T19:00",
-    "text": "Grocery run 🍐"
   }
 ]
