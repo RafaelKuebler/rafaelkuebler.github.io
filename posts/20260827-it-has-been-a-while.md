@@ -1,5 +1,5 @@
 ---
-title: "It has been a while"
+title: "It Has Been a While"
 date: 2026-08-27
 layout: post.njk
 tags:
