@@ -25,15 +25,13 @@ layout: base.njk
     }
     return 'Now';
   }
-  const stale = (now - new Date(past[0].datetime).getTime()) / 3600000 > 24;
+  const recent = (now - new Date(past[0].datetime).getTime()) / 3600000 < 2;
   const items = [];
-  if (stale) items.push({ text: '🤷\u200d♂️', label: 'Now' });
-  const limit = stale ? 5 : 6;
-  past.slice(0, limit).forEach((s, i) => {
+  past.slice(0, 6).forEach((s, i) => {
     items.push({
       text: s.text,
       datetime: s.datetime,
-      label: (i === 0 && !stale) ? 'Now' : relativeTime(s.datetime),
+      label: (i === 0 && recent) ? 'Now' : relativeTime(s.datetime),
     });
   });
   section.innerHTML = items.map((s, i) => {
