@@ -4,6 +4,10 @@
     "text": "Flying to Spain ✈️🇪🇸"
   },
   {
+    "datetime": "2026-09-12T18:00",
+    "text": "Warming up the house 🔥"
+  },
+  {
     "datetime": "2026-09-09T19:30",
     "text": "Black Keys concert! 🎸"
   },
@@ -38,9 +42,5 @@
   {
     "datetime": "2026-08-29T13:00",
     "text": "Trip to the hardware store 🔨"
-  },
-  {
-    "datetime": "2026-08-29T11:00",
-    "text": "Coffee and cake ☕️"
   }
 ]
