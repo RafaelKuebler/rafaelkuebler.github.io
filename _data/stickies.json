@@ -4,6 +4,10 @@
     "text": "Flying to Spain ✈️🇪🇸"
   },
   {
+    "datetime": "2026-09-19T16:00",
+    "text": "Museum visit 🖼️"
+  },
+  {
     "datetime": "2026-09-19T09:30",
     "text": "Testing my boat! 🚣"
   },
@@ -38,9 +42,5 @@
   {
     "datetime": "2026-09-03T20:00",
     "text": "70mm Odyssey cinema 🤩🏛️"
-  },
-  {
-    "datetime": "2026-09-02T19:00",
-    "text": "Photoshopping 🧑‍💻"
   }
 ]
