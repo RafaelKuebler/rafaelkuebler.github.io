@@ -4,8 +4,24 @@
     "text": "Flying back home ✈️"
   },
   {
+    "datetime": "2026-09-27T10:00",
+    "text": "BBQing sausages at Oktoberfest 🍻"
+  },
+  {
     "datetime": "2026-09-26T14:55",
     "text": "Flying to Spain ✈️🇪🇸"
+  },
+  {
+    "datetime": "2026-09-25T18:00",
+    "text": "Evening with friends!"
+  },
+  {
+    "datetime": "2026-09-24T18:00",
+    "text": "Park Café with DJs 🎧"
+  },
+  {
+    "datetime": "2026-09-22T18:00",
+    "text": "Decathlon Visit"
   },
   {
     "datetime": "2026-09-19T16:00",
@@ -42,9 +58,5 @@
   {
     "datetime": "2026-09-04T19:00",
     "text": "Working out 🏋️‍♀️"
-  },
-  {
-    "datetime": "2026-09-03T20:00",
-    "text": "70mm Odyssey cinema 🤩🏛️"
   }
 ]
