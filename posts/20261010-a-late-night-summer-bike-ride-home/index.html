@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy v3.1.6">
+    <meta name="description" content="Rafael&#39;s blog">
+    <meta name="google-site-verification" content="wCT_aUtmFjTf3QKlwfOH-ZwkG4Q6lqKtsKJCubu7i1Q" />
+
+    
+    <meta name="description" content="Rafael&#39;s blog">
+    
+    <title>A Late-Night Summer Bike Ride Home</title>
+
+    <link rel="alternate" type="application/atom+xml" title="Rafa's blog" href="/feed.xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href=/css/css.css>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="canonical" href="https://rafaelkuebler.github.io/posts/20261010-a-late-night-summer-bike-ride-home/">
+</head>
+<body>
+    <button id="darkModeToggle" style="position: fixed; top: 1rem; right: 1rem; z-index: 9999;">🌓</button>
+    <nav class="site-nav">
+    <div class="nav-container">
+        <a href="/" class="nav-link ">Home</a>
+        <a href="/projects/" class="nav-link ">Projects</a>
+        <a href="/about" class="nav-link ">About</a>
+    </div>
+</nav> 
+    <main>
+        <article>
+  <p class="post-meta">
+    <time datetime="2026-10-10">2026-10-10</time>
+    &bull; About 2 min reading time
+  </p>
+  <h1>A Late-Night Summer Bike Ride Home</h1>
+  <p>The wind has been blowing cold around my neck these past days. I woke up this morning and my voice was raspy. Summer is over. Just a few weeks ago I was paddling down the Isar in an inflatable kayak and getting sunburned. Now I am wearing my winter jacket. A bit of a bummer, I have to say.<br>
+A memory popped up quite vividly while I was preparing some tea. Of a beautiful evening some months ago.</p>
+<p>It had been such a long day at work. I left the office around 7 p.m quite tired. A friend had invited me over. We go way back, to the old school days in Madrid. And the evening was quite nice! A bunch of funny, really chill and awesome guys that he knew from university. A summer storm surprised us, with a gust of wind pushing the balcony door open abruptly and throwing everything that was on the dinner table to the floor, making us clean up the mess.<br>
+When it stopped raining, three of us wrapped it up and started to head home, only to discover that taking the public transport would mean a total of 40 minutes, with 2 transfers between metros!?</p>
+<p>So I had the idea of each renting a city-bike (MVG bike, or as they are called after the rebrand, MyRadl). Boy, best decision of the month! A lot of them were parked nearby, even an e-bike for the lazy dude in the group. We hopped on, and rode through the night! It was <em>super</em> fun. It was midnight, so the roads were completely empty, the air was warm and smelled of <a href="https://en.wikipedia.org/wiki/Petrichor" target="_blank" rel="noopener noreferrer" class="external-link">petrichor</a>, and we just rode. We ignored the red traffic lights, swerved around puddles, shouted things at each other, and I completely forgot about time. I was sad that it was over when the group split up, I returned the bike, and walked the last steps to my flat. But I was smiling and happy and grateful that it had happened.</p>
+<p>I want to hold on to this memory, for as long as possible. An evening full of unexpected joy, wonder, and awe for the simple things in life. Good company, the warm summer breeze on your skin, and the smell of rain.</p>
+
+
+  
+  
+  
+  <nav class="post-nav" aria-label="Post navigation">
+    <div class="post-nav-prev">
+      
+        <span class="post-nav-label">← Previous</span>
+        <a href="/posts/20260902-the-little-things/">The Little Things</a>
+      
+    </div>
+    <div class="post-nav-next">
+      
+    </div>
+  </nav>
+  
+</article>
+<button id="scrollToTop" type="button" class="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+    </main>
+    <script>
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // On load, apply stored preference
+        if (localStorage.getItem('dark-mode') === 'true') {
+            html.classList.add('dark');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            localStorage.setItem('dark-mode', html.classList.contains('dark'));
+        });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    </script>
+</body>
+</html>
