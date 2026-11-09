@@ -1,5 +1,13 @@
 [
   {
+    "datetime": "2026-11-08T10:00",
+    "text": "Cyberpunk TTRPG 🦾"
+  },
+  {
+    "datetime": "2026-11-07T20:00",
+    "text": "Trying out new recipes 👨🏻‍🍳"
+  },
+  {
     "datetime": "2026-11-01T18:00",
     "text": "Chinese Dinner 🍜"
   },
@@ -30,13 +38,5 @@
   {
     "datetime": "2026-10-17T12:00",
     "text": "And boardgames 😅"
-  },
-  {
-    "datetime": "2026-10-16T19:00",
-    "text": "Series with friends 🍸🍣"
-  },
-  {
-    "datetime": "2026-10-14T18:00",
-    "text": "DnD evening! 🐉 🎲"
   }
 ]
