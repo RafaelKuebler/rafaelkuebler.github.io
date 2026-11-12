@@ -390,16 +390,16 @@ aside.sticky-note p:last-child {
     gap: 0.5rem;
   }
   .post-list-item {
-    display: block;
+    display: grid;
+    grid-template-columns: 3.6em 1fr;
+    column-gap: 0.4em;
   }
   .post-date {
-    display: inline-block;
-    min-width: 3.4em;
+    min-width: 0;
     font-size: 0.95em;
-    margin-right: 0.1em;
   }
   .post-reading-time {
-    margin-left: 0.4em;
+    grid-column: 2;
   }
   .image-container {
     max-width: 100%;
@@ -744,4 +744,9 @@ aside.home-sticky {
         -webkit-mask-image: linear-gradient(to right, #000 40%, transparent 100%);
                 mask-image: linear-gradient(to right, #000 40%, transparent 100%);
     }
+}
+
+.posts-heading .social-link {
+    font-size: 0.8em;
+    margin-left: 0.3em;
 }
